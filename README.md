@@ -2,7 +2,7 @@
 
 This repository is the source of truth for the workspace templates shown in Otion's "New from template" gallery.
 
-A template is just what Otion is: **a folder of plain files.** Each entry here holds a small manifest, preview screenshots, and the workspace files themselves — Markdown pages, `.db.json` databases, and any local assets (images, audio, PDFs).
+A template is just what Otion is: **a folder of plain files.** Each entry here holds a small manifest, a square gallery icon, and the workspace files themselves — Markdown pages, `.db.json` databases, and any local assets (images, audio, PDFs).
 
 ## Security
 
@@ -14,8 +14,8 @@ A template is just what Otion is: **a folder of plain files.** Each entry here h
 |---|---|
 | [`index.json`](index.json) | The generated gallery index Otion clients fetch. Never edit by hand. |
 | [`order.json`](order.json) | Display order. Maintainer-controlled — contributor PRs must not touch it. |
-| [`templates/<id>/template.json`](schemas/template.schema.json) | Per-template manifest (title, description, author, version, license, tags, previews). |
-| `templates/<id>/preview/` | Screenshot(s) shown in the gallery. |
+| [`templates/<id>/template.json`](schemas/template.schema.json) | Per-template manifest (title, description, author, version, license, tags, icon). |
+| `templates/<id>/icon.png` | Square (1:1) icon shown in the gallery, ≤ 512 KB. Never copied into a user's workspace. |
 | `templates/<id>/workspace/` | The template content: pages, `databases/`, assets. |
 | [`scripts/validate.py`](scripts/validate.py) | The full validation + security scan CI runs. Run it locally before submitting. |
 | [`scripts/build_index.py`](scripts/build_index.py) | Regenerates `index.json` from the manifests + `order.json`. |

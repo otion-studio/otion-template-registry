@@ -1,0 +1,109 @@
+{
+  "name": "Risks",
+  "icon": "⚠️",
+  "description": "Live risk register for the Aurora launch — likelihood, impact, and who owns the mitigation.",
+  "schema": {
+    "title": { "type": "title" },
+    "likelihood": {
+      "type": "select",
+      "options": [
+        { "name": "Low", "color": "green" },
+        { "name": "Medium", "color": "yellow" },
+        { "name": "High", "color": "red" }
+      ]
+    },
+    "impact": {
+      "type": "select",
+      "options": [
+        { "name": "Low", "color": "green" },
+        { "name": "Medium", "color": "yellow" },
+        { "name": "High", "color": "red" }
+      ]
+    },
+    "status": {
+      "type": "select",
+      "options": [
+        { "name": "Open", "color": "red" },
+        { "name": "Mitigating", "color": "yellow" },
+        { "name": "Closed", "color": "green" }
+      ]
+    },
+    "owner": { "type": "text" }
+  },
+  "views": [
+    {
+      "name": "Register",
+      "type": "table",
+      "visible_properties": ["title", "likelihood", "impact", "status", "owner"],
+      "property_widths": { "title": 380, "owner": 160 },
+      "sorts": [{ "property": "status", "direction": "asc" }],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1746300000000_0",
+      "title": "Matter certification slips past the August gate",
+      "likelihood": "Medium",
+      "impact": "High",
+      "status": "Mitigating",
+      "owner": "Mei-Ling Chen"
+    },
+    {
+      "id": "row_1746300000000_1",
+      "title": "Enclosure tooling lead time pushes production start",
+      "likelihood": "High",
+      "impact": "High",
+      "status": "Mitigating",
+      "owner": "Carlos Mendes"
+    },
+    {
+      "id": "row_1746300000000_2",
+      "title": "Single-source supplier for the Wi-Fi module",
+      "likelihood": "Medium",
+      "impact": "High",
+      "status": "Open",
+      "owner": "Carlos Mendes"
+    },
+    {
+      "id": "row_1746300000000_3",
+      "title": "Retail partners demand exclusivity terms we can't meet",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "status": "Open",
+      "owner": "James Whitfield"
+    },
+    {
+      "id": "row_1746300000000_4",
+      "title": "Launch film production overruns its budget",
+      "likelihood": "Low",
+      "impact": "Medium",
+      "status": "Open",
+      "owner": "Sofia Marino"
+    },
+    {
+      "id": "row_1746300000000_5",
+      "title": "Component-cost inflation erodes the target margin",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "status": "Mitigating",
+      "owner": "Hannah Bergström"
+    },
+    {
+      "id": "row_1746300000000_6",
+      "title": "Support team under-staffed for launch-week volume",
+      "likelihood": "Medium",
+      "impact": "High",
+      "status": "Open",
+      "owner": "Olivia Grant"
+    },
+    {
+      "id": "row_1746300000000_7",
+      "title": "App localization quality issues in launch markets",
+      "likelihood": "Low",
+      "impact": "Low",
+      "status": "Closed",
+      "owner": "Yuki Tanaka"
+    }
+  ]
+}

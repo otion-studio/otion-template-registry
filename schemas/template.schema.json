@@ -3,7 +3,7 @@
   "$id": "https://github.com/otion-studio/otion-template-registry/schemas/template.schema.json",
   "title": "Otion template manifest (template.json)",
   "type": "object",
-  "required": ["id", "title", "description", "version", "license", "author", "tags", "previews"],
+  "required": ["id", "title", "description", "version", "license", "author", "tags", "icon"],
   "additionalProperties": false,
   "properties": {
     "id": {
@@ -47,12 +47,10 @@
       "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
       "maxItems": 6
     },
-    "previews": {
-      "type": "array",
-      "minItems": 1,
-      "maxItems": 5,
-      "items": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.(png|jpg|jpeg|webp)$" },
-      "description": "Filenames inside the template's preview/ folder, in display order."
+    "icon": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]+\\.(png|jpg|jpeg|webp)$",
+      "description": "Square (1:1) icon image filename directly inside the template folder, VS Code-extension style. Max 512 KB. Shown only in the gallery — never copied into a user's workspace."
     }
   }
 }

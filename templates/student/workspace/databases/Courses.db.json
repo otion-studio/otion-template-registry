@@ -1,0 +1,84 @@
+{
+  "name": "Courses",
+  "icon": "🎓",
+  "description": "Every class this term — code, instructor, credits, and meeting times.",
+  "schema": {
+    "title": { "type": "title" },
+    "code": { "type": "text" },
+    "instructor": { "type": "text" },
+    "credits": { "type": "number" },
+    "schedule": { "type": "text" },
+    "term": {
+      "type": "select",
+      "options": [
+        { "name": "Fall 2026", "color": "orange" }
+      ]
+    }
+  },
+  "views": [
+    {
+      "name": "Table",
+      "type": "table",
+      "visible_properties": ["title", "code", "instructor", "credits", "schedule", "term"],
+      "property_widths": { "title": 220, "code": 110, "instructor": 180, "schedule": 170 },
+      "sorts": [{ "property": "code", "direction": "asc" }],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1756684800000_0",
+      "title": "Calculus II",
+      "code": "MATH-201",
+      "instructor": "Dr. Elena Marsh",
+      "credits": 4,
+      "schedule": "Mon/Wed 10:00",
+      "term": "Fall 2026"
+    },
+    {
+      "id": "row_1756684800000_1",
+      "title": "Microeconomics",
+      "code": "ECON-101",
+      "instructor": "Prof. Daniel Okoro",
+      "credits": 3,
+      "schedule": "Tue/Thu 09:00",
+      "term": "Fall 2026"
+    },
+    {
+      "id": "row_1756684800000_2",
+      "title": "Modern History",
+      "code": "HIST-210",
+      "instructor": "Dr. Sofia Bauer",
+      "credits": 3,
+      "schedule": "Mon/Wed 13:00",
+      "term": "Fall 2026"
+    },
+    {
+      "id": "row_1756684800000_3",
+      "title": "Statistics",
+      "code": "STAT-150",
+      "instructor": "Dr. Raj Mehta",
+      "credits": 4,
+      "schedule": "Tue/Thu 11:00",
+      "term": "Fall 2026"
+    },
+    {
+      "id": "row_1756684800000_4",
+      "title": "English Literature",
+      "code": "ENGL-220",
+      "instructor": "Prof. Claire Donnelly",
+      "credits": 3,
+      "schedule": "Fri 09:00",
+      "term": "Fall 2026"
+    },
+    {
+      "id": "row_1756684800000_5",
+      "title": "Linear Algebra",
+      "code": "MATH-240",
+      "instructor": "Dr. Yuki Tanaka",
+      "credits": 4,
+      "schedule": "Mon/Wed/Fri 14:00",
+      "term": "Fall 2026"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "name": "Budget",
+  "icon": "💰",
+  "description": "Monthly operating budget by category. Each category's monthly_cost sums its line items; annual_cost multiplies by the months_per_year constant.",
+  "schema": {
+    "title": {
+      "type": "title"
+    },
+    "category": {
+      "type": "select",
+      "options": [
+        {
+          "name": "Engineering",
+          "color": "blue"
+        },
+        {
+          "name": "Marketing",
+          "color": "pink"
+        },
+        {
+          "name": "Sales",
+          "color": "green"
+        },
+        {
+          "name": "Tools & Software",
+          "color": "purple"
+        },
+        {
+          "name": "Operations",
+          "color": "orange"
+        }
+      ]
+    },
+    "monthly_cost": {
+      "type": "number"
+    },
+    "annual_cost": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "text"
+    }
+  },
+  "constants": {
+    "months_per_year": 12
+  },
+  "views": [
+    {
+      "name": "By Category",
+      "type": "table",
+      "visible_properties": [
+        "title",
+        "category",
+        "monthly_cost",
+        "annual_cost",
+        "notes"
+      ],
+      "property_widths": {
+        "title": 260,
+        "category": 150,
+        "monthly_cost": 130,
+        "annual_cost": 130,
+        "notes": 360
+      },
+      "sorts": [
+        {
+          "property": "category",
+          "direction": "asc"
+        }
+      ],
+      "filters": []
+    },
+    {
+      "name": "Board",
+      "type": "board",
+      "group_by": "category",
+      "visible_properties": [
+        "title",
+        "monthly_cost"
+      ],
+      "sorts": [],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_budget_cat_engineering",
+      "title": "Engineering",
+      "category": "Engineering",
+      "monthly_cost": "__sum__",
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Budget.db.json\",\"rowId\":\"row_budget_cat_engineering\",\"key\":\"monthly_cost\"},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Rolls up its line items below. Current monthly total: about 17,970 USD."
+    },
+    {
+      "id": "row_budget_cat_engineering_li0",
+      "title": "Backend & API engineer",
+      "category": "Engineering",
+      "monthly_cost": 9000,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":9000},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Senior contractor building the recipe + subscription backend.",
+      "_parent_id": "row_budget_cat_engineering"
+    },
+    {
+      "id": "row_budget_cat_engineering_li1",
+      "title": "Mobile engineer",
+      "category": "Engineering",
+      "monthly_cost": 8200,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":8200},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "iOS/Android app, the product surface customers actually touch.",
+      "_parent_id": "row_budget_cat_engineering"
+    },
+    {
+      "id": "row_budget_cat_engineering_li2",
+      "title": "Cloud hosting & infra",
+      "category": "Engineering",
+      "monthly_cost": 650,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":650},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Managed database, app servers, and CDN for recipe images.",
+      "_parent_id": "row_budget_cat_engineering"
+    },
+    {
+      "id": "row_budget_cat_engineering_li3",
+      "title": "Error & uptime monitoring",
+      "category": "Engineering",
+      "monthly_cost": 120,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":120},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Crash reporting and uptime alerts so launch week stays calm.",
+      "_parent_id": "row_budget_cat_engineering"
+    },
+    {
+      "id": "row_budget_cat_marketing",
+      "title": "Marketing",
+      "category": "Marketing",
+      "monthly_cost": "__sum__",
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Budget.db.json\",\"rowId\":\"row_budget_cat_marketing\",\"key\":\"monthly_cost\"},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Rolls up its line items below. Current monthly total: about 4,980 USD."
+    },
+    {
+      "id": "row_budget_cat_marketing_li0",
+      "title": "Paid social ads",
+      "category": "Marketing",
+      "monthly_cost": 2500,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":2500},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Instagram and TikTok campaigns aimed at the launch CAC of 40 USD.",
+      "_parent_id": "row_budget_cat_marketing"
+    },
+    {
+      "id": "row_budget_cat_marketing_li1",
+      "title": "Content & recipe SEO",
+      "category": "Marketing",
+      "monthly_cost": 1400,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":1400},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Freelance food writer producing weekly searchable recipe posts.",
+      "_parent_id": "row_budget_cat_marketing"
+    },
+    {
+      "id": "row_budget_cat_marketing_li2",
+      "title": "Email & lifecycle tool",
+      "category": "Marketing",
+      "monthly_cost": 180,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":180},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Onboarding and win-back email automation to fight churn.",
+      "_parent_id": "row_budget_cat_marketing"
+    },
+    {
+      "id": "row_budget_cat_marketing_li3",
+      "title": "Influencer partnerships",
+      "category": "Marketing",
+      "monthly_cost": 900,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":900},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Micro-creator collabs in the home-cooking niche.",
+      "_parent_id": "row_budget_cat_marketing"
+    },
+    {
+      "id": "row_budget_cat_sales",
+      "title": "Sales",
+      "category": "Sales",
+      "monthly_cost": "__sum__",
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Budget.db.json\",\"rowId\":\"row_budget_cat_sales\",\"key\":\"monthly_cost\"},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Rolls up its line items below. Current monthly total: about 3,540 USD."
+    },
+    {
+      "id": "row_budget_cat_sales_li0",
+      "title": "Partnerships lead (part-time)",
+      "category": "Sales",
+      "monthly_cost": 3200,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":3200},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Lands grocery-delivery and CSA box bundle deals.",
+      "_parent_id": "row_budget_cat_sales"
+    },
+    {
+      "id": "row_budget_cat_sales_li1",
+      "title": "CRM seats",
+      "category": "Sales",
+      "monthly_cost": 90,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":90},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Pipeline tracking for partnership conversations.",
+      "_parent_id": "row_budget_cat_sales"
+    },
+    {
+      "id": "row_budget_cat_sales_li2",
+      "title": "Demo & onboarding calls",
+      "category": "Sales",
+      "monthly_cost": 250,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":250},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Scheduling and call tooling for B2B bundle prospects.",
+      "_parent_id": "row_budget_cat_sales"
+    },
+    {
+      "id": "row_budget_cat_tools_and_software",
+      "title": "Tools & Software",
+      "category": "Tools & Software",
+      "monthly_cost": "__sum__",
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Budget.db.json\",\"rowId\":\"row_budget_cat_tools_and_software\",\"key\":\"monthly_cost\"},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Rolls up its line items below. Current monthly total: about 815 USD."
+    },
+    {
+      "id": "row_budget_cat_tools_and_software_li0",
+      "title": "Payments & billing fees",
+      "category": "Tools & Software",
+      "monthly_cost": 480,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":480},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Subscription billing platform base fee plus processing.",
+      "_parent_id": "row_budget_cat_tools_and_software"
+    },
+    {
+      "id": "row_budget_cat_tools_and_software_li1",
+      "title": "Design & prototyping",
+      "category": "Tools & Software",
+      "monthly_cost": 75,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":75},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Shared design tool for the product and marketing teams.",
+      "_parent_id": "row_budget_cat_tools_and_software"
+    },
+    {
+      "id": "row_budget_cat_tools_and_software_li2",
+      "title": "Analytics & dashboards",
+      "category": "Tools & Software",
+      "monthly_cost": 200,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":200},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Product analytics to watch activation, retention, and churn.",
+      "_parent_id": "row_budget_cat_tools_and_software"
+    },
+    {
+      "id": "row_budget_cat_tools_and_software_li3",
+      "title": "Workspace & docs",
+      "category": "Tools & Software",
+      "monthly_cost": 60,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":60},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Team docs, this plan, and shared knowledge base.",
+      "_parent_id": "row_budget_cat_tools_and_software"
+    },
+    {
+      "id": "row_budget_cat_operations",
+      "title": "Operations",
+      "category": "Operations",
+      "monthly_cost": "__sum__",
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Budget.db.json\",\"rowId\":\"row_budget_cat_operations\",\"key\":\"monthly_cost\"},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Rolls up its line items below. Current monthly total: about 5,970 USD."
+    },
+    {
+      "id": "row_budget_cat_operations_li0",
+      "title": "Founder salary (lean)",
+      "category": "Operations",
+      "monthly_cost": 5000,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":5000},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Below-market founder draw to extend runway.",
+      "_parent_id": "row_budget_cat_operations"
+    },
+    {
+      "id": "row_budget_cat_operations_li1",
+      "title": "Accounting & legal",
+      "category": "Operations",
+      "monthly_cost": 600,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":600},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Bookkeeping, taxes, and terms-of-service review.",
+      "_parent_id": "row_budget_cat_operations"
+    },
+    {
+      "id": "row_budget_cat_operations_li2",
+      "title": "Customer support tooling",
+      "category": "Operations",
+      "monthly_cost": 150,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":150},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Help desk and shared inbox for subscriber questions.",
+      "_parent_id": "row_budget_cat_operations"
+    },
+    {
+      "id": "row_budget_cat_operations_li3",
+      "title": "Office & misc",
+      "category": "Operations",
+      "monthly_cost": 220,
+      "annual_cost": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"num\",\"value\":220},\"b\":{\"type\":\"const\",\"name\":\"months_per_year\"}}",
+      "notes": "Co-working desk, supplies, and small recurring costs.",
+      "_parent_id": "row_budget_cat_operations"
+    }
+  ]
+}

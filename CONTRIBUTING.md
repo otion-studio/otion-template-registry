@@ -5,7 +5,7 @@
 1. Build your workspace in Otion until it looks the way you want.
 2. Copy the content files into `templates/<your-id>/workspace/` — pages (`.md`), `databases/`, and any local assets. **Do not include** `project.otion`, `AGENTS.md`, `ai-settings.json`, `backup/`, or dot-files; Otion generates those.
 3. Add `templates/<your-id>/template.json` following [`schemas/template.schema.json`](schemas/template.schema.json). Title with the use case ("Plan and ship a project"), not the feature ("Board view").
-4. Add at least one screenshot to `templates/<your-id>/preview/` and list it in the manifest.
+4. Add a square (1:1) icon image — `templates/<your-id>/icon.png` (≤ 512 KB) — and name it in the manifest's `icon` field.
 5. Run the validator from the repo root and fix anything it reports:
 
    ```bash

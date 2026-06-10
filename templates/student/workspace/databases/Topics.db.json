@@ -1,0 +1,188 @@
+{
+  "name": "Topics",
+  "icon": "🧠",
+  "description": "Every syllabus topic to master, tagged by how confident you feel and which exam it shows up on.",
+  "schema": {
+    "title": { "type": "title" },
+    "course": {
+      "type": "select",
+      "options": [
+        { "name": "Calculus II", "color": "blue" },
+        { "name": "Microeconomics", "color": "green" },
+        { "name": "Modern History", "color": "orange" },
+        { "name": "Statistics", "color": "purple" },
+        { "name": "English Literature", "color": "pink" },
+        { "name": "Linear Algebra", "color": "red" }
+      ]
+    },
+    "confidence": {
+      "type": "select",
+      "options": [
+        { "name": "Shaky", "color": "red" },
+        { "name": "OK", "color": "yellow" },
+        { "name": "Solid", "color": "green" }
+      ]
+    },
+    "exam": { "type": "text" }
+  },
+  "views": [
+    {
+      "name": "All topics",
+      "type": "table",
+      "visible_properties": ["title", "course", "confidence", "exam"],
+      "property_widths": { "title": 300, "course": 150, "exam": 220 },
+      "sorts": [{ "property": "course", "direction": "asc" }],
+      "filters": []
+    },
+    {
+      "name": "By confidence",
+      "type": "board",
+      "group_by": "confidence",
+      "visible_properties": ["title", "course", "exam"],
+      "sorts": [],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1757030400000_0",
+      "title": "Integration by parts",
+      "course": "Calculus II",
+      "confidence": "Solid",
+      "exam": "Calculus II — Midterm"
+    },
+    {
+      "id": "row_1757030400000_1",
+      "title": "Trigonometric substitution",
+      "course": "Calculus II",
+      "confidence": "OK",
+      "exam": "Calculus II — Midterm"
+    },
+    {
+      "id": "row_1757030400000_2",
+      "title": "Partial fraction decomposition",
+      "course": "Calculus II",
+      "confidence": "Shaky",
+      "exam": "Calculus II — Midterm"
+    },
+    {
+      "id": "row_1757030400000_3",
+      "title": "Convergence tests for series",
+      "course": "Calculus II",
+      "confidence": "Shaky",
+      "exam": "Calculus II — Final"
+    },
+    {
+      "id": "row_1757030400000_4",
+      "title": "Taylor and Maclaurin series",
+      "course": "Calculus II",
+      "confidence": "OK",
+      "exam": "Calculus II — Final"
+    },
+    {
+      "id": "row_1757030400000_5",
+      "title": "Supply, demand, and equilibrium",
+      "course": "Microeconomics",
+      "confidence": "Solid",
+      "exam": "Microeconomics — Quiz 1"
+    },
+    {
+      "id": "row_1757030400000_6",
+      "title": "Price elasticity of demand",
+      "course": "Microeconomics",
+      "confidence": "OK",
+      "exam": "Microeconomics — Midterm"
+    },
+    {
+      "id": "row_1757030400000_7",
+      "title": "Taxes and deadweight loss",
+      "course": "Microeconomics",
+      "confidence": "Shaky",
+      "exam": "Microeconomics — Midterm"
+    },
+    {
+      "id": "row_1757030400000_8",
+      "title": "Causes of the Industrial Revolution",
+      "course": "Modern History",
+      "confidence": "OK",
+      "exam": "Modern History — Midterm"
+    },
+    {
+      "id": "row_1757030400000_9",
+      "title": "Social impact of industrialization",
+      "course": "Modern History",
+      "confidence": "Shaky",
+      "exam": "Modern History — Midterm"
+    },
+    {
+      "id": "row_1757030400000_10",
+      "title": "Causes of World War I (MAIN)",
+      "course": "Modern History",
+      "confidence": "Shaky",
+      "exam": "Modern History — Final"
+    },
+    {
+      "id": "row_1757030400000_11",
+      "title": "Trench warfare and the Western Front",
+      "course": "Modern History",
+      "confidence": "OK",
+      "exam": "Modern History — Final"
+    },
+    {
+      "id": "row_1757030400000_12",
+      "title": "Conditional probability and Bayes' rule",
+      "course": "Statistics",
+      "confidence": "OK",
+      "exam": "Statistics — Quiz 1"
+    },
+    {
+      "id": "row_1757030400000_13",
+      "title": "Expectation and variance",
+      "course": "Statistics",
+      "confidence": "Shaky",
+      "exam": "Statistics — Midterm"
+    },
+    {
+      "id": "row_1757030400000_14",
+      "title": "The normal distribution",
+      "course": "Statistics",
+      "confidence": "OK",
+      "exam": "Statistics — Midterm"
+    },
+    {
+      "id": "row_1757030400000_15",
+      "title": "Hypothesis testing and p-values",
+      "course": "Statistics",
+      "confidence": "Shaky",
+      "exam": "Statistics — Final"
+    },
+    {
+      "id": "row_1757030400000_16",
+      "title": "Close reading and textual evidence",
+      "course": "English Literature",
+      "confidence": "Solid",
+      "exam": "English Literature — Midterm"
+    },
+    {
+      "id": "row_1757030400000_17",
+      "title": "Romantic poetry: themes and form",
+      "course": "English Literature",
+      "confidence": "OK",
+      "exam": "English Literature — Midterm"
+    },
+    {
+      "id": "row_1757030400000_18",
+      "title": "Gaussian elimination and row reduction",
+      "course": "Linear Algebra",
+      "confidence": "Solid",
+      "exam": "Linear Algebra — Quiz 1"
+    },
+    {
+      "id": "row_1757030400000_19",
+      "title": "Vector spaces, basis, and dimension",
+      "course": "Linear Algebra",
+      "confidence": "Shaky",
+      "exam": "Linear Algebra — Midterm"
+    }
+  ]
+}

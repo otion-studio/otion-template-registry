@@ -1,10 +1,10 @@
 {
   "order": [
     "getting-started",
-    "project-tracker",
-    "reading-list",
-    "habit-tracker",
-    "travel-planner",
-    "study-notes"
+    "minimal",
+    "project-plan",
+    "business-plan",
+    "second-brain",
+    "student"
   ]
 }

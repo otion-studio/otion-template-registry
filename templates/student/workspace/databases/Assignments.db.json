@@ -1,0 +1,185 @@
+{
+  "name": "Assignments",
+  "icon": "✅",
+  "description": "Problem sets, essays, and labs — what's due, where it stands, and what it's worth.",
+  "schema": {
+    "title": { "type": "title" },
+    "course": {
+      "type": "select",
+      "options": [
+        { "name": "Calculus II", "color": "blue" },
+        { "name": "Microeconomics", "color": "green" },
+        { "name": "Modern History", "color": "orange" },
+        { "name": "Statistics", "color": "purple" },
+        { "name": "English Literature", "color": "pink" },
+        { "name": "Linear Algebra", "color": "red" }
+      ]
+    },
+    "due": { "type": "date" },
+    "status": {
+      "type": "select",
+      "options": [
+        { "name": "Not started", "color": "gray" },
+        { "name": "In progress", "color": "blue" },
+        { "name": "Submitted", "color": "yellow" },
+        { "name": "Graded", "color": "green" }
+      ]
+    },
+    "grade": { "type": "text" },
+    "weight": { "type": "number" }
+  },
+  "views": [
+    {
+      "name": "By due date",
+      "type": "table",
+      "visible_properties": ["title", "course", "due", "status", "grade", "weight"],
+      "property_widths": { "title": 280, "course": 150 },
+      "sorts": [{ "property": "due", "direction": "asc" }],
+      "filters": []
+    },
+    {
+      "name": "Pipeline",
+      "type": "board",
+      "group_by": "status",
+      "visible_properties": ["title", "course", "due"],
+      "sorts": [{ "property": "due", "direction": "asc" }],
+      "filters": []
+    },
+    {
+      "name": "Calendar",
+      "type": "calendar",
+      "date_property": "due",
+      "visible_properties": ["title", "course", "status"],
+      "sorts": [],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1758240000000_0",
+      "title": "Calculus II — Problem Set 3 (integration by parts)",
+      "course": "Calculus II",
+      "due": "2026-09-25",
+      "status": "Graded",
+      "grade": "94%",
+      "weight": 4
+    },
+    {
+      "id": "row_1758240000000_1",
+      "title": "Microeconomics — Problem Set 2 (elasticity)",
+      "course": "Microeconomics",
+      "due": "2026-09-29",
+      "status": "Graded",
+      "grade": "88%",
+      "weight": 4
+    },
+    {
+      "id": "row_1758240000000_2",
+      "title": "Statistics — Lab 1 (descriptive statistics)",
+      "course": "Statistics",
+      "due": "2026-10-02",
+      "status": "Graded",
+      "grade": "91%",
+      "weight": 5
+    },
+    {
+      "id": "row_1758240000000_3",
+      "title": "Modern History — Reading response: causes of industrialization",
+      "course": "Modern History",
+      "due": "2026-10-07",
+      "status": "Submitted",
+      "grade": "",
+      "weight": 5
+    },
+    {
+      "id": "row_1758240000000_4",
+      "title": "Linear Algebra — Problem Set 2 (Gaussian elimination)",
+      "course": "Linear Algebra",
+      "due": "2026-10-12",
+      "status": "Submitted",
+      "grade": "",
+      "weight": 4
+    },
+    {
+      "id": "row_1758240000000_5",
+      "title": "Calculus II — Problem Set 4 (partial fractions)",
+      "course": "Calculus II",
+      "due": "2026-10-16",
+      "status": "In progress",
+      "grade": "",
+      "weight": 4
+    },
+    {
+      "id": "row_1758240000000_6",
+      "title": "English Literature — Essay 1: narrative voice in a Romantic poem",
+      "course": "English Literature",
+      "due": "2026-10-20",
+      "status": "In progress",
+      "grade": "",
+      "weight": 15
+    },
+    {
+      "id": "row_1758240000000_7",
+      "title": "Microeconomics — Problem Set 3 (taxes and deadweight loss)",
+      "course": "Microeconomics",
+      "due": "2026-10-23",
+      "status": "Not started",
+      "grade": "",
+      "weight": 4
+    },
+    {
+      "id": "row_1758240000000_8",
+      "title": "Statistics — Lab 2 (probability simulation)",
+      "course": "Statistics",
+      "due": "2026-10-30",
+      "status": "Not started",
+      "grade": "",
+      "weight": 5
+    },
+    {
+      "id": "row_1758240000000_9",
+      "title": "Modern History — Source analysis: WWI primary documents",
+      "course": "Modern History",
+      "due": "2026-11-06",
+      "status": "Not started",
+      "grade": "",
+      "weight": 10
+    },
+    {
+      "id": "row_1758240000000_10",
+      "title": "Linear Algebra — Problem Set 3 (vector spaces and basis)",
+      "course": "Linear Algebra",
+      "due": "2026-11-13",
+      "status": "Not started",
+      "grade": "",
+      "weight": 4
+    },
+    {
+      "id": "row_1758240000000_11",
+      "title": "Calculus II — Problem Set 5 (sequences and series)",
+      "course": "Calculus II",
+      "due": "2026-11-20",
+      "status": "Not started",
+      "grade": "",
+      "weight": 4
+    },
+    {
+      "id": "row_1758240000000_12",
+      "title": "English Literature — Essay 2: comparative close reading",
+      "course": "English Literature",
+      "due": "2026-11-27",
+      "status": "Not started",
+      "grade": "",
+      "weight": 20
+    },
+    {
+      "id": "row_1758240000000_13",
+      "title": "Statistics — Final project: hypothesis test write-up",
+      "course": "Statistics",
+      "due": "2026-12-04",
+      "status": "Not started",
+      "grade": "",
+      "weight": 15
+    }
+  ]
+}

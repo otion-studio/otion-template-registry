@@ -1,0 +1,80 @@
+{
+  "name": "Milestones",
+  "icon": "🚩",
+  "description": "Phase gates and the launch date. Effort is pulled live from each phase's rolled-up total in Tasks.",
+  "schema": {
+    "title": { "type": "title" },
+    "date": { "type": "date" },
+    "status": {
+      "type": "select",
+      "options": [
+        { "name": "Upcoming", "color": "gray" },
+        { "name": "At Risk", "color": "red" },
+        { "name": "On Track", "color": "blue" },
+        { "name": "Hit", "color": "green" }
+      ]
+    },
+    "owner": { "type": "text" },
+    "effort_days": { "type": "number" }
+  },
+  "views": [
+    {
+      "name": "Timeline",
+      "type": "table",
+      "visible_properties": ["title", "date", "status", "owner", "effort_days"],
+      "property_widths": { "title": 320, "owner": 160 },
+      "sorts": [{ "property": "date", "direction": "asc" }],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1746100000000_0",
+      "title": "Discovery sign-off (Gate 0)",
+      "date": "2026-06-12",
+      "status": "Hit",
+      "owner": "Priya Raman",
+      "effort_days": "__numref__||Tasks.db.json||row_1746000000000_0||effort_days"
+    },
+    {
+      "id": "row_1746100000000_1",
+      "title": "Engineering build complete (Gate 1)",
+      "date": "2026-08-21",
+      "status": "On Track",
+      "owner": "Mei-Ling Chen",
+      "effort_days": "__numref__||Tasks.db.json||row_1746000000000_11||effort_days"
+    },
+    {
+      "id": "row_1746100000000_2",
+      "title": "Go-to-market readiness (Gate 2)",
+      "date": "2026-09-18",
+      "status": "On Track",
+      "owner": "Daniel Okafor",
+      "effort_days": "__numref__||Tasks.db.json||row_1746000000000_25||effort_days"
+    },
+    {
+      "id": "row_1746100000000_3",
+      "title": "Manufacturing & logistics ready (Gate 3)",
+      "date": "2026-10-07",
+      "status": "Upcoming",
+      "owner": "Carlos Mendes",
+      "effort_days": "__numref__||Tasks.db.json||row_1746000000000_32||effort_days"
+    },
+    {
+      "id": "row_1746100000000_4",
+      "title": "Aurora line public launch",
+      "date": "2026-10-09",
+      "status": "Upcoming",
+      "owner": "Priya Raman",
+      "effort_days": "__numref__||Tasks.db.json||row_1746000000000_32||effort_days"
+    },
+    {
+      "id": "row_1746100000000_5",
+      "title": "30-day post-launch review",
+      "date": "2026-10-30",
+      "status": "Upcoming",
+      "owner": "Priya Raman",
+      "effort_days": "__numref__||Tasks.db.json||row_1746000000000_37||effort_days"
+    }
+  ]
+}

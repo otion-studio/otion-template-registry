@@ -1,0 +1,199 @@
+{
+  "name": "Exams",
+  "icon": "📝",
+  "description": "Every quiz, midterm, and final this term — sorted by date, grouped by how ready you are.",
+  "schema": {
+    "title": { "type": "title" },
+    "course": {
+      "type": "select",
+      "options": [
+        { "name": "Calculus II", "color": "blue" },
+        { "name": "Microeconomics", "color": "green" },
+        { "name": "Modern History", "color": "orange" },
+        { "name": "Statistics", "color": "purple" },
+        { "name": "English Literature", "color": "pink" },
+        { "name": "Linear Algebra", "color": "red" }
+      ]
+    },
+    "date": { "type": "date" },
+    "type": {
+      "type": "select",
+      "options": [
+        { "name": "Quiz", "color": "gray" },
+        { "name": "Midterm", "color": "yellow" },
+        { "name": "Final", "color": "red" }
+      ]
+    },
+    "topics": { "type": "text" },
+    "location": { "type": "text" },
+    "study_status": {
+      "type": "select",
+      "options": [
+        { "name": "Not started", "color": "gray" },
+        { "name": "Studying", "color": "yellow" },
+        { "name": "Ready", "color": "green" }
+      ]
+    },
+    "weight": { "type": "number" }
+  },
+  "views": [
+    {
+      "name": "Calendar",
+      "type": "calendar",
+      "date_property": "date",
+      "visible_properties": ["title", "course", "type", "study_status"],
+      "sorts": [],
+      "filters": []
+    },
+    {
+      "name": "By date",
+      "type": "table",
+      "visible_properties": ["title", "course", "date", "type", "location", "study_status", "weight"],
+      "property_widths": { "title": 240, "topics": 280 },
+      "sorts": [{ "property": "date", "direction": "asc" }],
+      "filters": []
+    },
+    {
+      "name": "Readiness",
+      "type": "board",
+      "group_by": "study_status",
+      "visible_properties": ["title", "course", "date", "type"],
+      "sorts": [{ "property": "date", "direction": "asc" }],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1759276800000_0",
+      "title": "Microeconomics — Quiz 1",
+      "course": "Microeconomics",
+      "date": "2026-10-06",
+      "type": "Quiz",
+      "topics": "Supply and demand, market equilibrium, shifts vs. movements along a curve.",
+      "location": "Room E-114",
+      "study_status": "Ready",
+      "weight": 5
+    },
+    {
+      "id": "row_1759276800000_1",
+      "title": "Statistics — Quiz 1",
+      "course": "Statistics",
+      "date": "2026-10-09",
+      "type": "Quiz",
+      "topics": "Sample spaces, basic probability rules, conditional probability, Bayes' rule.",
+      "location": "Room S-220",
+      "study_status": "Studying",
+      "weight": 5
+    },
+    {
+      "id": "row_1759276800000_2",
+      "title": "Calculus II — Midterm",
+      "course": "Calculus II",
+      "date": "2026-10-15",
+      "type": "Midterm",
+      "topics": "Integration by parts, trig substitution, partial fractions, improper integrals.",
+      "location": "Hall A (main)",
+      "study_status": "Studying",
+      "weight": 25
+    },
+    {
+      "id": "row_1759276800000_3",
+      "title": "Linear Algebra — Quiz 1",
+      "course": "Linear Algebra",
+      "date": "2026-10-19",
+      "type": "Quiz",
+      "topics": "Gaussian elimination, matrix operations, rank, solving linear systems.",
+      "location": "Room M-105",
+      "study_status": "Not started",
+      "weight": 5
+    },
+    {
+      "id": "row_1759276800000_4",
+      "title": "Modern History — Midterm",
+      "course": "Modern History",
+      "date": "2026-10-22",
+      "type": "Midterm",
+      "topics": "Industrial Revolution: causes, key inventions, social consequences.",
+      "location": "Hall B",
+      "study_status": "Not started",
+      "weight": 20
+    },
+    {
+      "id": "row_1759276800000_5",
+      "title": "Microeconomics — Midterm",
+      "course": "Microeconomics",
+      "date": "2026-10-27",
+      "type": "Midterm",
+      "topics": "Elasticity, consumer surplus, price controls, taxes and deadweight loss.",
+      "location": "Room E-114",
+      "study_status": "Not started",
+      "weight": 25
+    },
+    {
+      "id": "row_1759276800000_6",
+      "title": "English Literature — Midterm",
+      "course": "English Literature",
+      "date": "2026-11-03",
+      "type": "Midterm",
+      "topics": "Close reading, Romantic poetry, narrative voice, thesis-driven essay.",
+      "location": "Room L-301",
+      "study_status": "Not started",
+      "weight": 20
+    },
+    {
+      "id": "row_1759276800000_7",
+      "title": "Statistics — Midterm",
+      "course": "Statistics",
+      "date": "2026-11-10",
+      "type": "Midterm",
+      "topics": "Random variables, expectation, variance, the normal distribution.",
+      "location": "Room S-220",
+      "study_status": "Not started",
+      "weight": 25
+    },
+    {
+      "id": "row_1759276800000_8",
+      "title": "Linear Algebra — Midterm",
+      "course": "Linear Algebra",
+      "date": "2026-11-17",
+      "type": "Midterm",
+      "topics": "Vector spaces, subspaces, basis and dimension, linear independence.",
+      "location": "Room M-105",
+      "study_status": "Not started",
+      "weight": 25
+    },
+    {
+      "id": "row_1759276800000_9",
+      "title": "Calculus II — Final",
+      "course": "Calculus II",
+      "date": "2026-12-08",
+      "type": "Final",
+      "topics": "Cumulative: integration techniques, sequences and series, convergence tests, Taylor series.",
+      "location": "Hall A (main)",
+      "study_status": "Not started",
+      "weight": 40
+    },
+    {
+      "id": "row_1759276800000_10",
+      "title": "Statistics — Final",
+      "course": "Statistics",
+      "date": "2026-12-11",
+      "type": "Final",
+      "topics": "Cumulative: probability, distributions, confidence intervals, hypothesis testing.",
+      "location": "Room S-220",
+      "study_status": "Not started",
+      "weight": 40
+    },
+    {
+      "id": "row_1759276800000_11",
+      "title": "Modern History — Final",
+      "course": "Modern History",
+      "date": "2026-12-15",
+      "type": "Final",
+      "topics": "Cumulative: Industrial Revolution through World War I, causes and consequences.",
+      "location": "Hall B",
+      "study_status": "Not started",
+      "weight": 40
+    }
+  ]
+}

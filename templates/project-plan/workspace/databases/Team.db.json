@@ -1,0 +1,130 @@
+{
+  "name": "Team",
+  "icon": "👥",
+  "description": "The cross-functional Aurora launch team and how much of their time is committed.",
+  "schema": {
+    "title": { "type": "title" },
+    "role": { "type": "text" },
+    "department": {
+      "type": "select",
+      "options": [
+        { "name": "Engineering", "color": "blue" },
+        { "name": "Marketing", "color": "orange" },
+        { "name": "Sales", "color": "yellow" },
+        { "name": "Operations", "color": "green" },
+        { "name": "Finance", "color": "purple" },
+        { "name": "People", "color": "pink" }
+      ]
+    },
+    "allocation": { "type": "number" },
+    "email": { "type": "email" }
+  },
+  "views": [
+    {
+      "name": "Directory",
+      "type": "table",
+      "visible_properties": ["title", "role", "department", "allocation", "email"],
+      "property_widths": { "title": 200, "role": 240, "email": 240 },
+      "sorts": [{ "property": "department", "direction": "asc" }],
+      "filters": []
+    },
+    {
+      "name": "By Department",
+      "type": "board",
+      "group_by": "department",
+      "visible_properties": ["title", "role", "allocation"],
+      "sorts": [],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1746200000000_0",
+      "title": "Priya Raman",
+      "role": "Program Lead (PMO)",
+      "department": "Operations",
+      "allocation": 100,
+      "email": "priya.raman@example.com"
+    },
+    {
+      "id": "row_1746200000000_1",
+      "title": "Mei-Ling Chen",
+      "role": "Director of Engineering",
+      "department": "Engineering",
+      "allocation": 80,
+      "email": "meiling.chen@example.com"
+    },
+    {
+      "id": "row_1746200000000_2",
+      "title": "Aleksandr Volkov",
+      "role": "Principal Hardware Engineer",
+      "department": "Engineering",
+      "allocation": 100,
+      "email": "aleksandr.volkov@example.com"
+    },
+    {
+      "id": "row_1746200000000_3",
+      "title": "Yuki Tanaka",
+      "role": "Lead App Engineer",
+      "department": "Engineering",
+      "allocation": 100,
+      "email": "yuki.tanaka@example.com"
+    },
+    {
+      "id": "row_1746200000000_4",
+      "title": "Daniel Okafor",
+      "role": "Head of Product Marketing",
+      "department": "Marketing",
+      "allocation": 75,
+      "email": "daniel.okafor@example.com"
+    },
+    {
+      "id": "row_1746200000000_5",
+      "title": "Sofia Marino",
+      "role": "Creative & Brand Manager",
+      "department": "Marketing",
+      "allocation": 90,
+      "email": "sofia.marino@example.com"
+    },
+    {
+      "id": "row_1746200000000_6",
+      "title": "James Whitfield",
+      "role": "VP of Sales",
+      "department": "Sales",
+      "allocation": 50,
+      "email": "james.whitfield@example.com"
+    },
+    {
+      "id": "row_1746200000000_7",
+      "title": "Nadia Haddad",
+      "role": "Sales Enablement Manager",
+      "department": "Sales",
+      "allocation": 60,
+      "email": "nadia.haddad@example.com"
+    },
+    {
+      "id": "row_1746200000000_8",
+      "title": "Carlos Mendes",
+      "role": "Head of Supply Chain",
+      "department": "Operations",
+      "allocation": 100,
+      "email": "carlos.mendes@example.com"
+    },
+    {
+      "id": "row_1746200000000_9",
+      "title": "Hannah Bergström",
+      "role": "Finance Business Partner",
+      "department": "Finance",
+      "allocation": 50,
+      "email": "hannah.bergstrom@example.com"
+    },
+    {
+      "id": "row_1746200000000_10",
+      "title": "Olivia Grant",
+      "role": "People & Support Operations Lead",
+      "department": "People",
+      "allocation": 60,
+      "email": "olivia.grant@example.com"
+    }
+  ]
+}

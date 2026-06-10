@@ -1,0 +1,65 @@
+{
+  "name": "Grades",
+  "icon": "📊",
+  "description": "One row per course — where your grade stands now, where you want it, and what it'll take.",
+  "schema": {
+    "title": { "type": "title" },
+    "current_grade": { "type": "text" },
+    "target_grade": { "type": "text" },
+    "notes": { "type": "text" }
+  },
+  "views": [
+    {
+      "name": "Table",
+      "type": "table",
+      "visible_properties": ["title", "current_grade", "target_grade", "notes"],
+      "property_widths": { "title": 200, "notes": 360 },
+      "sorts": [{ "property": "title", "direction": "asc" }],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1756771200000_0",
+      "title": "Calculus II",
+      "current_grade": "A- (91%)",
+      "target_grade": "A",
+      "notes": "Strong on problem sets. Partial fractions is the weak spot before the final — drill it."
+    },
+    {
+      "id": "row_1756771200000_1",
+      "title": "Microeconomics",
+      "current_grade": "B+ (88%)",
+      "target_grade": "A-",
+      "notes": "Quiz went well. Deadweight-loss diagrams cost points last time; redo the graph practice."
+    },
+    {
+      "id": "row_1756771200000_2",
+      "title": "Modern History",
+      "current_grade": "B (85%)",
+      "target_grade": "A-",
+      "notes": "Essays are fine; dates and causal chains need flashcards before the midterm."
+    },
+    {
+      "id": "row_1756771200000_3",
+      "title": "Statistics",
+      "current_grade": "A- (90%)",
+      "target_grade": "A",
+      "notes": "Labs are graded well. Need to make the leap from formulas to interpreting results in words."
+    },
+    {
+      "id": "row_1756771200000_4",
+      "title": "English Literature",
+      "current_grade": "B+ (87%)",
+      "target_grade": "A-",
+      "notes": "Close reading is a strength. Push thesis statements to be sharper and more arguable."
+    },
+    {
+      "id": "row_1756771200000_5",
+      "title": "Linear Algebra",
+      "current_grade": "B (84%)",
+      "target_grade": "A-",
+      "notes": "Mechanics are solid; the abstract chapters (vector spaces, basis) need real review time."
+    }
+  ]
+}

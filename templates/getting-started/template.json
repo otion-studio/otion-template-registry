@@ -6,5 +6,5 @@
   "license": "CC0-1.0",
   "author": { "name": "GalLahat" },
   "tags": ["starter", "onboarding", "basics"],
-  "previews": ["1.png"]
+  "icon": "icon.png"
 }

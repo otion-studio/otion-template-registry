@@ -15,9 +15,7 @@
         "onboarding",
         "basics"
       ],
-      "previews": [
-        "templates/getting-started/preview/1.png"
-      ],
+      "icon": "templates/getting-started/icon.png",
       "path": "templates/getting-started/workspace",
       "files": [
         "Home.md",
@@ -31,9 +29,29 @@
       ]
     },
     {
-      "id": "project-tracker",
-      "title": "Plan and ship a project",
-      "description": "A release hub with a kanban board, deadline calendar, meeting notes, and milestones whose effort totals compute themselves from the task tracker.",
+      "id": "minimal",
+      "title": "Minimal",
+      "description": "A single blank page. Nothing to delete, nothing to learn — just start writing.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "minimal",
+        "blank",
+        "starter"
+      ],
+      "icon": "templates/minimal/icon.png",
+      "path": "templates/minimal/workspace",
+      "files": [
+        "Untitled.md"
+      ]
+    },
+    {
+      "id": "project-plan",
+      "title": "Plan a company project",
+      "description": "A full multi-department initiative: phased task tree with rolled-up effort, milestones, team, and risks — board, calendar, and table views.",
       "version": "1.0.0",
       "license": "CC0-1.0",
       "author": {
@@ -41,122 +59,146 @@
       },
       "tags": [
         "project",
-        "kanban",
-        "team",
+        "company",
+        "planning",
         "formulas"
       ],
-      "previews": [
-        "templates/project-tracker/preview/1.png"
-      ],
-      "path": "templates/project-tracker/workspace",
+      "icon": "templates/project-plan/icon.png",
+      "path": "templates/project-plan/workspace",
       "files": [
         "Meeting Notes.md",
-        "Project Hub.md",
+        "Project Charter.md",
+        "Project Charter.sub_pages/Communications Plan.md",
+        "Project Charter.sub_pages/Risks and Mitigations.md",
+        "Project Charter.sub_pages/Stakeholders.md",
+        "Project Charter.sub_pages/Status Reports.md",
         "databases/Milestones.db.json",
-        "databases/Project Tasks.db.json"
+        "databases/Risks.db.json",
+        "databases/Tasks.db.json",
+        "databases/Team.db.json"
       ]
     },
     {
-      "id": "reading-list",
-      "title": "Track what you read",
-      "description": "Keep every book in one place — what you want to read, what you're reading now, and what you finished — with ratings, genres, and notes you can browse as a gallery or a board.",
+      "id": "business-plan",
+      "title": "Write a business plan",
+      "description": "Product assumptions (price, growth, churn) drive a live 12-month revenue projection, plus a category budget — change an assumption and the model recomputes.",
       "version": "1.0.0",
       "license": "CC0-1.0",
       "author": {
         "name": "GalLahat"
       },
       "tags": [
-        "reading",
-        "books",
-        "personal",
-        "tracking"
+        "business",
+        "finance",
+        "projection",
+        "formulas"
       ],
-      "previews": [
-        "templates/reading-list/preview/1.png"
-      ],
-      "path": "templates/reading-list/workspace",
+      "icon": "templates/business-plan/icon.png",
+      "path": "templates/business-plan/workspace",
       "files": [
-        "Reading Notes.md",
-        "Reading.md",
-        "databases/Books.db.json"
-      ]
-    },
-    {
-      "id": "habit-tracker",
-      "title": "Build daily habits",
-      "description": "Log each day with one click and watch your streaks grow on a 30-day grid. Comes with four example habits and a month of realistic entries so you can see it working immediately.",
-      "version": "1.0.0",
-      "license": "CC0-1.0",
-      "author": {
-        "name": "GalLahat"
-      },
-      "tags": [
-        "habits",
-        "daily",
-        "tracking",
-        "personal",
-        "wellness"
-      ],
-      "previews": [
-        "templates/habit-tracker/preview/1.png"
-      ],
-      "path": "templates/habit-tracker/workspace",
-      "files": [
-        "Habits.md",
-        "databases/Habits.db.json"
-      ]
-    },
-    {
-      "id": "travel-planner",
-      "title": "Plan a trip end to end",
-      "description": "Map out every day of a trip on one calendar — flights, hotels, food, sights — and track the budget with category totals and currency conversion. Ships with a 9-day Japan example.",
-      "version": "1.0.0",
-      "license": "CC0-1.0",
-      "author": {
-        "name": "GalLahat"
-      },
-      "tags": [
-        "travel",
-        "trip-planning",
-        "itinerary",
-        "budget"
-      ],
-      "previews": [
-        "templates/travel-planner/preview/1.png"
-      ],
-      "path": "templates/travel-planner/workspace",
-      "files": [
-        "Trip Plan.md",
+        "Business Plan.md",
+        "Business Plan.sub_pages/Executive Summary.md",
+        "Business Plan.sub_pages/Financial Plan.md",
+        "Business Plan.sub_pages/Go-to-Market.md",
+        "Business Plan.sub_pages/Market and Customers.md",
+        "Business Plan.sub_pages/Pricing and Growth Model.md",
+        "Business Plan.sub_pages/Product.md",
+        "databases/Assumptions.db.json",
         "databases/Budget.db.json",
-        "databases/Itinerary.db.json"
+        "databases/Projections.db.json"
       ]
     },
     {
-      "id": "study-notes",
-      "title": "Take course notes that stay organized",
-      "description": "Keep every course in one place: a home page linking each class, nested lecture notes with real formulas, and an assignment tracker sorted by due date and grouped by status.",
+      "id": "second-brain",
+      "title": "Build a second brain",
+      "description": "A growing web of atomic notes and ideas connected by page references — mental models, learning, productivity, and creativity, all cross-linked.",
       "version": "1.0.0",
       "license": "CC0-1.0",
       "author": {
         "name": "GalLahat"
       },
       "tags": [
-        "education",
-        "study",
-        "note-taking",
-        "students"
+        "notes",
+        "knowledge",
+        "zettelkasten",
+        "pkm"
       ],
-      "previews": [
-        "templates/study-notes/preview/1.png"
-      ],
-      "path": "templates/study-notes/workspace",
+      "icon": "templates/second-brain/icon.png",
+      "path": "templates/second-brain/workspace",
       "files": [
-        "Courses.md",
+        "Antifragility.md",
+        "Atomic notes.md",
+        "Beginner's mind.md",
+        "Circle of competence.md",
+        "Compounding.md",
+        "Constraints breed creativity.md",
+        "Creativity.md",
+        "Decision-making.md",
+        "Deep work.md",
+        "Default to action.md",
+        "Deliberate practice.md",
+        "Evergreen notes.md",
+        "First principles.md",
+        "Flow.md",
+        "Home.md",
+        "Idea emergence.md",
+        "Inversion.md",
+        "Learning.md",
+        "Map is not the territory.md",
+        "Mental Models.md",
+        "Opportunity cost.md",
+        "Productivity.md",
+        "Second-order thinking.md",
+        "Sources.md",
+        "Spaced repetition.md",
+        "The 80-20 principle.md",
+        "The Eisenhower matrix.md",
+        "The Feynman technique.md",
+        "The adjacent possible.md",
+        "The two-minute rule.md",
+        "Via negativa.md",
+        "databases/Sources.db.json"
+      ]
+    },
+    {
+      "id": "student",
+      "title": "Manage your semester",
+      "description": "A full student command center: courses, an exam calendar by topic, assignments, syllabus mastery tracking, and lecture notes for every class.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "student",
+        "study",
+        "school",
+        "notes"
+      ],
+      "icon": "templates/student/icon.png",
+      "path": "templates/student/workspace",
+      "files": [
+        "Calculus II.md",
+        "Calculus II.sub_pages/Integration Techniques.md",
+        "Calculus II.sub_pages/Sequences and Series.md",
+        "Calculus II.sub_pages/Taylor Series.md",
+        "English Literature.md",
         "Linear Algebra.md",
-        "Linear Algebra.sub_pages/Matrix Operations.md",
-        "Linear Algebra.sub_pages/Vectors and Spaces.md",
-        "World History.md",
-        "databases/Assignments.db.json"
+        "Microeconomics.md",
+        "Microeconomics.sub_pages/Elasticity.md",
+        "Microeconomics.sub_pages/Supply and Demand.md",
+        "Modern History.md",
+        "Modern History.sub_pages/Industrial Revolution.md",
+        "Modern History.sub_pages/World War I.md",
+        "Semester Hub.md",
+        "Statistics.md",
+        "Statistics.sub_pages/Hypothesis Testing.md",
+        "Statistics.sub_pages/Probability Basics.md",
+        "databases/Assignments.db.json",
+        "databases/Courses.db.json",
+        "databases/Exams.db.json",
+        "databases/Grades.db.json",
+        "databases/Topics.db.json"
       ]
     }
   ]

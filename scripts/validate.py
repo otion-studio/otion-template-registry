@@ -80,10 +80,53 @@ REQUIRED_MANIFEST_FIELDS = {
     "license": str,
     "author": dict,
     "tags": list,
-    "previews": list,
+    "icon": str,
 }
 
 ALLOWED_LICENSES = {"CC0-1.0", "MIT", "CC-BY-4.0"}
+
+# Square template icon (VS Code-extension style). Lives beside workspace/ and is
+# shown only in the gallery — never written into a user's workspace.
+ICON_EXTS = {"png", "jpg", "jpeg", "webp"}
+MAX_ICON_BYTES = 512 * 1024
+ICON_ASPECT_TOLERANCE = 0.05  # icons must be square within ±5%
+
+
+def image_size(path: pathlib.Path) -> "tuple[int, int] | None":
+    """Read (width, height) from a PNG/JPEG/WebP header without external deps.
+    Returns None if the format isn't recognized."""
+    data = path.read_bytes()
+    if data[:8] == b"\x89PNG\r\n\x1a\n" and len(data) >= 24:
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    if data[:3] == b"\xff\xd8\xff":  # JPEG: scan for a SOF marker
+        i = 2
+        while i + 9 < len(data):
+            if data[i] != 0xFF:
+                i += 1
+                continue
+            marker = data[i + 1]
+            if 0xC0 <= marker <= 0xCF and marker not in (0xC4, 0xC8, 0xCC):
+                h = int.from_bytes(data[i + 5:i + 7], "big")
+                w = int.from_bytes(data[i + 7:i + 9], "big")
+                return w, h
+            seg_len = int.from_bytes(data[i + 2:i + 4], "big")
+            i += 2 + seg_len
+        return None
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        fmt = data[12:16]
+        if fmt == b"VP8 ":
+            return (int.from_bytes(data[26:28], "little") & 0x3FFF,
+                    int.from_bytes(data[28:30], "little") & 0x3FFF)
+        if fmt == b"VP8L":
+            b = data[21:25]
+            w = ((b[0] | (b[1] << 8)) & 0x3FFF) + 1
+            h = (((b[1] >> 6) | (b[2] << 2) | ((b[3] & 0x0F) << 10)) & 0x3FFF) + 1
+            return w, h
+        if fmt == b"VP8X":
+            w = int.from_bytes(data[24:27], "little") + 1
+            h = int.from_bytes(data[27:30], "little") + 1
+            return w, h
+    return None
 
 
 def err_for_template(errs: list[str], tid: str, msg: str) -> None:
@@ -325,21 +368,39 @@ def check_manifest(tid: str, tdir: pathlib.Path, errs: list[str]) -> dict | None
     if isinstance(m.get("description"), str) and len(m["description"]) > 200:
         err_for_template(errs, tid, "description over 200 chars")
 
-    previews = m.get("previews")
-    if isinstance(previews, list):
-        if not previews:
-            err_for_template(errs, tid, "at least one preview required")
-        declared = set()
-        for p in previews:
-            declared.add(p)
-            if not isinstance(p, str) or not (tdir / "preview" / p).is_file():
-                err_for_template(errs, tid, f"declared preview missing: preview/{p}")
-        pdir = tdir / "preview"
-        if pdir.is_dir():
-            for f in pdir.iterdir():
-                if f.is_file() and f.name not in declared:
-                    err_for_template(errs, tid, f"undeclared file in preview/: {f.name}")
+    icon = m.get("icon")
+    if isinstance(icon, str) and icon:
+        if not isSafeIconName(icon):
+            err_for_template(errs, tid, f"icon name unsafe: {icon!r}")
+        else:
+            ipath = tdir / icon
+            if not ipath.is_file():
+                err_for_template(errs, tid, f"icon file missing: {icon}")
+            elif ipath.suffix.lower().lstrip(".") not in ICON_EXTS:
+                err_for_template(errs, tid, f"icon must be {sorted(ICON_EXTS)}: {icon}")
+            else:
+                size = ipath.stat().st_size
+                if size > MAX_ICON_BYTES:
+                    err_for_template(errs, tid, f"icon too large ({size} bytes, max {MAX_ICON_BYTES})")
+                dims = image_size(ipath)
+                if dims is None:
+                    err_for_template(errs, tid, f"icon not a valid image: {icon}")
+                else:
+                    w, h = dims
+                    if min(w, h) == 0 or abs(w - h) / max(w, h) > ICON_ASPECT_TOLERANCE:
+                        err_for_template(errs, tid, f"icon must be square (got {w}x{h})")
     return m
+
+
+def isSafeIconName(name: str) -> bool:
+    """The icon is a single file directly inside the template folder."""
+    return (
+        bool(name)
+        and "/" not in name
+        and "\\" not in name
+        and not name.startswith(".")
+        and ".." not in name
+    )
 
 
 # --- index -------------------------------------------------------------------
@@ -369,7 +430,7 @@ def build_index(root: pathlib.Path) -> dict:
             "license": m["license"],
             "author": m["author"],
             "tags": m["tags"],
-            "previews": [f"templates/{tid}/preview/{p}" for p in m["previews"]],
+            "icon": f"templates/{tid}/{m['icon']}",
             "path": f"templates/{tid}/workspace",
             "files": list_workspace_files(root / "templates" / tid / "workspace"),
         })

@@ -1,0 +1,65 @@
+{
+  "name": "Assumptions",
+  "icon": "🎛️",
+  "description": "The editable inputs that drive the whole model. Change a value here and the Projections recompute.",
+  "schema": {
+    "title": { "type": "title" },
+    "value": { "type": "number" },
+    "unit": { "type": "text" },
+    "notes": { "type": "text" }
+  },
+  "views": [
+    {
+      "name": "Inputs",
+      "type": "table",
+      "visible_properties": ["title", "value", "unit", "notes"],
+      "property_widths": { "title": 220, "value": 110, "unit": 140, "notes": 460 },
+      "sorts": [],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_assume_price",
+      "title": "Launch price",
+      "value": 12,
+      "unit": "USD / month",
+      "notes": "Single plan, billed monthly. Benchmarked against the 9 USD–15 USD band most consumer meal-planning apps sit in."
+    },
+    {
+      "id": "row_assume_growth",
+      "title": "Monthly growth rate",
+      "value": 0.08,
+      "unit": "fraction / month",
+      "notes": "Gross new customers added each month as a share of last month's base. 0.08 = 8%. Driven mostly by referrals and content."
+    },
+    {
+      "id": "row_assume_churn",
+      "title": "Monthly churn",
+      "value": 0.03,
+      "unit": "fraction / month",
+      "notes": "Share of customers who cancel each month. 0.03 = 3%, healthy for a habit-forming consumer subscription."
+    },
+    {
+      "id": "row_assume_start",
+      "title": "Starting customers",
+      "value": 150,
+      "unit": "customers",
+      "notes": "Paying subscribers carried over from the closed beta at the start of Month 1 (January 2026)."
+    },
+    {
+      "id": "row_assume_cac",
+      "title": "CAC",
+      "value": 40,
+      "unit": "USD / new customer",
+      "notes": "Fully-loaded cost to acquire one new paying customer across all channels. Payback lands inside four months at the launch price."
+    },
+    {
+      "id": "row_assume_margin",
+      "title": "Gross margin",
+      "value": 0.85,
+      "unit": "fraction of revenue",
+      "notes": "Revenue left after hosting, payment fees, and recipe-content licensing. 0.85 = 85%, typical for a software subscription."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "minimal",
+  "title": "Minimal",
+  "description": "A single blank page. Nothing to delete, nothing to learn — just start writing.",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": { "name": "GalLahat" },
+  "tags": ["minimal", "blank", "starter"],
+  "icon": "icon.png"
+}

@@ -1,0 +1,151 @@
+{
+  "name": "Sources",
+  "icon": "📚",
+  "description": "Books, essays, and talks that seeded the notes in this second brain.",
+  "schema": {
+    "title": { "type": "title" },
+    "author": { "type": "text" },
+    "type": {
+      "type": "select",
+      "options": [
+        { "name": "Book", "color": "blue" },
+        { "name": "Essay", "color": "green" },
+        { "name": "Talk", "color": "purple" }
+      ]
+    },
+    "topic": {
+      "type": "multi_select",
+      "options": [
+        { "name": "productivity", "color": "yellow" },
+        { "name": "learning", "color": "blue" },
+        { "name": "creativity", "color": "pink" },
+        { "name": "decisions", "color": "red" },
+        { "name": "writing", "color": "green" }
+      ]
+    },
+    "rating": {
+      "type": "select",
+      "options": [
+        { "name": "★★★", "color": "gray" },
+        { "name": "★★★★", "color": "yellow" },
+        { "name": "★★★★★", "color": "green" }
+      ]
+    }
+  },
+  "views": [
+    {
+      "name": "Table",
+      "type": "table",
+      "visible_properties": ["title", "author", "type", "topic", "rating"],
+      "property_widths": { "title": 280, "author": 180 },
+      "sorts": [{ "property": "rating", "direction": "desc" }],
+      "filters": []
+    },
+    {
+      "name": "By type",
+      "type": "board",
+      "group_by": "type",
+      "visible_properties": ["title", "author", "rating"],
+      "sorts": [],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1717900000000_0",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "type": "Book",
+      "topic": ["productivity", "learning"],
+      "rating": "★★★★★"
+    },
+    {
+      "id": "row_1717900000000_1",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "type": "Book",
+      "topic": ["decisions", "learning"],
+      "rating": "★★★★★"
+    },
+    {
+      "id": "row_1717900000000_2",
+      "title": "Poor Charlie's Almanack",
+      "author": "Charlie Munger",
+      "type": "Book",
+      "topic": ["decisions", "learning"],
+      "rating": "★★★★★"
+    },
+    {
+      "id": "row_1717900000000_3",
+      "title": "Antifragile",
+      "author": "Nassim Nicholas Taleb",
+      "type": "Book",
+      "topic": ["decisions", "creativity"],
+      "rating": "★★★★"
+    },
+    {
+      "id": "row_1717900000000_4",
+      "title": "How to Take Smart Notes",
+      "author": "Sönke Ahrens",
+      "type": "Book",
+      "topic": ["learning", "writing"],
+      "rating": "★★★★★"
+    },
+    {
+      "id": "row_1717900000000_5",
+      "title": "Make It Stick",
+      "author": "Brown, Roediger & McDaniel",
+      "type": "Book",
+      "topic": ["learning"],
+      "rating": "★★★★"
+    },
+    {
+      "id": "row_1717900000000_6",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "type": "Book",
+      "topic": ["productivity"],
+      "rating": "★★★★"
+    },
+    {
+      "id": "row_1717900000000_7",
+      "title": "The War of Art",
+      "author": "Steven Pressfield",
+      "type": "Book",
+      "topic": ["creativity", "writing"],
+      "rating": "★★★★"
+    },
+    {
+      "id": "row_1717900000000_8",
+      "title": "Flow: The Psychology of Optimal Experience",
+      "author": "Mihaly Csikszentmihalyi",
+      "type": "Book",
+      "topic": ["productivity", "creativity"],
+      "rating": "★★★★"
+    },
+    {
+      "id": "row_1717900000000_9",
+      "title": "How Complex Systems Fail",
+      "author": "Richard Cook",
+      "type": "Essay",
+      "topic": ["decisions"],
+      "rating": "★★★★"
+    },
+    {
+      "id": "row_1717900000000_10",
+      "title": "You and Your Research",
+      "author": "Richard Hamming",
+      "type": "Talk",
+      "topic": ["creativity", "learning"],
+      "rating": "★★★★★"
+    },
+    {
+      "id": "row_1717900000000_11",
+      "title": "The Adjacent Possible",
+      "author": "Steven Johnson",
+      "type": "Essay",
+      "topic": ["creativity"],
+      "rating": "★★★"
+    }
+  ]
+}
