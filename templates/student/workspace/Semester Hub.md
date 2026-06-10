@@ -37,6 +37,10 @@ Every quiz, midterm, and final, by date. Switch to the **Readiness** board to se
 
 ## Your courses
 
+This term's six courses — codes, instructors, and meeting times. Open any course below for its lecture notes.
+
+<!-- otion:database {"path":"databases/Courses.db.json","title":"Courses","height":"320"} -->
+
 <!-- otion:pageLink {"path":"Calculus II.md","title":"Calculus II — MATH-201"} -->
 
 <!-- otion:pageLink {"path":"Microeconomics.md","title":"Microeconomics — ECON-101"} -->

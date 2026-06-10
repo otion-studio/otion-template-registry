@@ -9,13 +9,15 @@ NestRoute is a meal-planning subscription app for busy households. You tell it w
 
 <!-- otion:info {"color":"blue","icon":"Lightbulb","text":"**The whole model lives in three databases.** *Assumptions* holds the inputs (price, growth, churn, CAC, margin). *Projections* turns them into a live 12-month forecast. *Budget* tracks what it costs to run. Change one number in Assumptions and every projection cell recomputes."} -->
 
-## Core assumptions at a glance
+## The assumptions
 
-<!-- otion:info {"color":"green","icon":"Target","text":"Launch price **12 USD/mo** · starting base **150 customers** · **8%** monthly growth · **3%** monthly churn · CAC **40 USD** · gross margin **85%**. Edit any of these on the Assumptions page and watch the projection move."} -->
+<!-- otion:info {"color":"green","icon":"Target","text":"These are the only inputs to the whole model. Edit a **value** below and every cell in the projection underneath recomputes. Launch price **12 USD/mo** · starting base **150 customers** · **8%** monthly growth · **3%** monthly churn · CAC **40 USD** · gross margin **85%**."} -->
+
+<!-- otion:database {"path":"databases/Assumptions.db.json","title":"Assumptions — the inputs","height":"300"} -->
 
 ## The 12-month projection
 
-This is the heart of the plan. Every cell below is a formula reading from the Assumptions database — there are no hard-coded numbers in this table.
+This is the heart of the plan. Every cell below is a formula reading from the **Assumptions** table just above — there are no hard-coded numbers in this projection. Change an assumption and watch this move.
 
 <!-- otion:database {"path":"databases/Projections.db.json","title":"12-Month Projection","height":"460"} -->
 
