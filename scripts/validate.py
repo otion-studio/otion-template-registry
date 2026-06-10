@@ -344,6 +344,17 @@ def check_manifest(tid: str, tdir: pathlib.Path, errs: list[str]) -> dict | None
 
 # --- index -------------------------------------------------------------------
 
+def list_workspace_files(ws: pathlib.Path) -> list[str]:
+    """Every regular file under workspace/, as forward-slash paths relative to
+    workspace/, sorted. This is the explicit manifest the client fetches —
+    clients never glob the repo tree, they only fetch files declared here."""
+    files = []
+    for p in sorted(ws.rglob("*")):
+        if p.is_file() and not p.is_symlink():
+            files.append(p.relative_to(ws).as_posix())
+    return files
+
+
 def build_index(root: pathlib.Path) -> dict:
     order_file = root / "order.json"
     order = json.loads(order_file.read_text(encoding="utf-8"))["order"]
@@ -360,6 +371,7 @@ def build_index(root: pathlib.Path) -> dict:
             "tags": m["tags"],
             "previews": [f"templates/{tid}/preview/{p}" for p in m["previews"]],
             "path": f"templates/{tid}/workspace",
+            "files": list_workspace_files(root / "templates" / tid / "workspace"),
         })
     return {"version": 1, "templates": entries}
 

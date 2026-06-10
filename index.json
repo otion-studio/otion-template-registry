@@ -18,7 +18,17 @@
       "previews": [
         "templates/getting-started/preview/1.png"
       ],
-      "path": "templates/getting-started/workspace"
+      "path": "templates/getting-started/workspace",
+      "files": [
+        "Home.md",
+        "Inbox.md",
+        "Learn Otion.md",
+        "Learn Otion.sub_pages/Databases and views.md",
+        "Learn Otion.sub_pages/Editing basics.md",
+        "Learn Otion.sub_pages/Everything is a file.md",
+        "Learn Otion.sub_pages/Meet the AI agent.md",
+        "databases/First Steps.db.json"
+      ]
     },
     {
       "id": "project-tracker",
@@ -38,7 +48,13 @@
       "previews": [
         "templates/project-tracker/preview/1.png"
       ],
-      "path": "templates/project-tracker/workspace"
+      "path": "templates/project-tracker/workspace",
+      "files": [
+        "Meeting Notes.md",
+        "Project Hub.md",
+        "databases/Milestones.db.json",
+        "databases/Project Tasks.db.json"
+      ]
     },
     {
       "id": "reading-list",
@@ -58,7 +74,12 @@
       "previews": [
         "templates/reading-list/preview/1.png"
       ],
-      "path": "templates/reading-list/workspace"
+      "path": "templates/reading-list/workspace",
+      "files": [
+        "Reading Notes.md",
+        "Reading.md",
+        "databases/Books.db.json"
+      ]
     },
     {
       "id": "habit-tracker",
@@ -79,7 +100,11 @@
       "previews": [
         "templates/habit-tracker/preview/1.png"
       ],
-      "path": "templates/habit-tracker/workspace"
+      "path": "templates/habit-tracker/workspace",
+      "files": [
+        "Habits.md",
+        "databases/Habits.db.json"
+      ]
     },
     {
       "id": "travel-planner",
@@ -99,7 +124,12 @@
       "previews": [
         "templates/travel-planner/preview/1.png"
       ],
-      "path": "templates/travel-planner/workspace"
+      "path": "templates/travel-planner/workspace",
+      "files": [
+        "Trip Plan.md",
+        "databases/Budget.db.json",
+        "databases/Itinerary.db.json"
+      ]
     },
     {
       "id": "study-notes",
@@ -119,7 +149,15 @@
       "previews": [
         "templates/study-notes/preview/1.png"
       ],
-      "path": "templates/study-notes/workspace"
+      "path": "templates/study-notes/workspace",
+      "files": [
+        "Courses.md",
+        "Linear Algebra.md",
+        "Linear Algebra.sub_pages/Matrix Operations.md",
+        "Linear Algebra.sub_pages/Vectors and Spaces.md",
+        "World History.md",
+        "databases/Assignments.db.json"
+      ]
     }
   ]
 }
