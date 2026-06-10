@@ -1,0 +1,118 @@
+{
+  "name": "Assignments",
+  "icon": "📝",
+  "description": "Every assignment across all courses, with due dates, status, and grades",
+  "schema": {
+    "title": { "type": "title" },
+    "course": {
+      "type": "select",
+      "options": [
+        { "name": "Linear Algebra", "color": "blue" },
+        { "name": "World History", "color": "purple" }
+      ]
+    },
+    "due": { "type": "date" },
+    "status": {
+      "type": "select",
+      "options": [
+        { "name": "Not started", "color": "gray" },
+        { "name": "In progress", "color": "yellow" },
+        { "name": "Submitted", "color": "blue" },
+        { "name": "Graded", "color": "green" }
+      ]
+    },
+    "grade": { "type": "text" }
+  },
+  "views": [
+    {
+      "name": "Table",
+      "type": "table",
+      "visible_properties": ["title", "course", "due", "status", "grade"],
+      "property_widths": { "title": 320 },
+      "sorts": [{ "property": "due", "direction": "asc" }],
+      "filters": []
+    },
+    {
+      "name": "Board",
+      "type": "board",
+      "group_by": "status",
+      "visible_properties": ["title", "course", "due"],
+      "sorts": [{ "property": "due", "direction": "asc" }],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1765958600000_0",
+      "title": "Problem Set 1: Vector spaces and span",
+      "course": "Linear Algebra",
+      "due": "2026-06-05",
+      "status": "Graded",
+      "grade": "94/100"
+    },
+    {
+      "id": "row_1765958600000_1",
+      "title": "Reading response: Peace of Westphalia",
+      "course": "World History",
+      "due": "2026-06-08",
+      "status": "Graded",
+      "grade": "91/100"
+    },
+    {
+      "id": "row_1765958600000_2",
+      "title": "Problem Set 2: Matrix algebra",
+      "course": "Linear Algebra",
+      "due": "2026-06-12",
+      "status": "Graded",
+      "grade": "88/100"
+    },
+    {
+      "id": "row_1765958600000_3",
+      "title": "Midterm exam",
+      "course": "Linear Algebra",
+      "due": "2026-06-15",
+      "status": "Graded",
+      "grade": "A-"
+    },
+    {
+      "id": "row_1765958600000_4",
+      "title": "Essay: causes of the First World War",
+      "course": "World History",
+      "due": "2026-06-17",
+      "status": "In progress",
+      "grade": ""
+    },
+    {
+      "id": "row_1765958600000_5",
+      "title": "Problem Set 3: Determinants",
+      "course": "Linear Algebra",
+      "due": "2026-06-19",
+      "status": "Submitted",
+      "grade": ""
+    },
+    {
+      "id": "row_1765958600000_6",
+      "title": "Source analysis: Cold War telegrams",
+      "course": "World History",
+      "due": "2026-06-24",
+      "status": "Not started",
+      "grade": ""
+    },
+    {
+      "id": "row_1765958600000_7",
+      "title": "Final project: eigenvalues in practice",
+      "course": "Linear Algebra",
+      "due": "2026-06-26",
+      "status": "In progress",
+      "grade": ""
+    },
+    {
+      "id": "row_1765958600000_8",
+      "title": "Final exam",
+      "course": "Linear Algebra",
+      "due": "2026-06-30",
+      "status": "Not started",
+      "grade": ""
+    }
+  ]
+}

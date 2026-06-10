@@ -1,0 +1,10 @@
+{
+  "id": "getting-started",
+  "title": "Start here",
+  "description": "A friendly first workspace: an inbox to capture anything, a five-minute tour, and an onboarding checklist that teaches you databases by using one.",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": { "name": "GalLahat" },
+  "tags": ["starter", "onboarding", "basics"],
+  "previews": ["1.png"]
+}

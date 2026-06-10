@@ -1,0 +1,515 @@
+{
+  "name": "Habits",
+  "icon": "✅",
+  "description": "Daily habits with one child entry per logged day.",
+  "schema": {
+    "title": {
+      "type": "title"
+    },
+    "date": {
+      "type": "date"
+    },
+    "status": {
+      "type": "select",
+      "options": [
+        {
+          "name": "Done",
+          "color": "green"
+        },
+        {
+          "name": "Skipped",
+          "color": "gray"
+        }
+      ]
+    },
+    "notes": {
+      "type": "text"
+    }
+  },
+  "views": [
+    {
+      "name": "Tracker",
+      "type": "habit",
+      "habit_date_property": "date",
+      "habit_status_property": "status",
+      "habit_window": 30,
+      "visible_properties": [
+        "title",
+        "date",
+        "status"
+      ],
+      "sorts": [],
+      "filters": []
+    },
+    {
+      "name": "Table",
+      "type": "table",
+      "visible_properties": [
+        "title",
+        "date",
+        "status",
+        "notes"
+      ],
+      "property_widths": {
+        "title": 240,
+        "notes": 340
+      },
+      "sorts": [
+        {
+          "property": "date",
+          "direction": "asc"
+        }
+      ],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1749542400000_0",
+      "title": "Meditation",
+      "notes": "Ten minutes of breathing practice, first thing in the morning."
+    },
+    {
+      "id": "row_1749542400000_1",
+      "title": "May 24",
+      "date": "2026-05-24",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_2",
+      "title": "May 25",
+      "date": "2026-05-25",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_3",
+      "title": "May 26",
+      "date": "2026-05-26",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_4",
+      "title": "May 27",
+      "date": "2026-05-27",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_5",
+      "title": "May 28",
+      "date": "2026-05-28",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_6",
+      "title": "May 29",
+      "date": "2026-05-29",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_7",
+      "title": "May 30",
+      "date": "2026-05-30",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_8",
+      "title": "May 31",
+      "date": "2026-05-31",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_9",
+      "title": "Jun 1",
+      "date": "2026-06-01",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_10",
+      "title": "Jun 2",
+      "date": "2026-06-02",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_11",
+      "title": "Jun 3",
+      "date": "2026-06-03",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_12",
+      "title": "Jun 4",
+      "date": "2026-06-04",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_13",
+      "title": "Jun 5",
+      "date": "2026-06-05",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_14",
+      "title": "Jun 6",
+      "date": "2026-06-06",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_15",
+      "title": "Jun 7",
+      "date": "2026-06-07",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_16",
+      "title": "Jun 8",
+      "date": "2026-06-08",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_17",
+      "title": "Jun 9",
+      "date": "2026-06-09",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_18",
+      "title": "Jun 10",
+      "date": "2026-06-10",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_0"
+    },
+    {
+      "id": "row_1749542400000_19",
+      "title": "Exercise",
+      "notes": "At least 30 minutes of movement — run, gym, or a long walk."
+    },
+    {
+      "id": "row_1749542400000_20",
+      "title": "May 14",
+      "date": "2026-05-14",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_21",
+      "title": "May 16",
+      "date": "2026-05-16",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_22",
+      "title": "May 18",
+      "date": "2026-05-18",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_23",
+      "title": "May 20",
+      "date": "2026-05-20",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_24",
+      "title": "May 22",
+      "date": "2026-05-22",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_25",
+      "title": "May 24",
+      "date": "2026-05-24",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_26",
+      "title": "May 26",
+      "date": "2026-05-26",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_27",
+      "title": "May 28",
+      "date": "2026-05-28",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_28",
+      "title": "May 30",
+      "date": "2026-05-30",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_29",
+      "title": "Jun 1",
+      "date": "2026-06-01",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_30",
+      "title": "Jun 3",
+      "date": "2026-06-03",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_31",
+      "title": "Jun 5",
+      "date": "2026-06-05",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_32",
+      "title": "Jun 7",
+      "date": "2026-06-07",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_33",
+      "title": "Jun 9",
+      "date": "2026-06-09",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_19"
+    },
+    {
+      "id": "row_1749542400000_34",
+      "title": "Reading",
+      "notes": "Twenty pages a day keeps the to-read pile shrinking."
+    },
+    {
+      "id": "row_1749542400000_35",
+      "title": "May 13",
+      "date": "2026-05-13",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_36",
+      "title": "May 15",
+      "date": "2026-05-15",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_37",
+      "title": "May 16",
+      "date": "2026-05-16",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_38",
+      "title": "May 18",
+      "date": "2026-05-18",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_39",
+      "title": "May 20",
+      "date": "2026-05-20",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_40",
+      "title": "May 21",
+      "date": "2026-05-21",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_41",
+      "title": "May 23",
+      "date": "2026-05-23",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_42",
+      "title": "May 25",
+      "date": "2026-05-25",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_43",
+      "title": "May 27",
+      "date": "2026-05-27",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_44",
+      "title": "May 29",
+      "date": "2026-05-29",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_45",
+      "title": "May 31",
+      "date": "2026-05-31",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_46",
+      "title": "Jun 2",
+      "date": "2026-06-02",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_47",
+      "title": "Jun 4",
+      "date": "2026-06-04",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_48",
+      "title": "Jun 6",
+      "date": "2026-06-06",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_49",
+      "title": "Jun 8",
+      "date": "2026-06-08",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_50",
+      "title": "Jun 10",
+      "date": "2026-06-10",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_34"
+    },
+    {
+      "id": "row_1749542400000_51",
+      "title": "Sleep before 11pm",
+      "notes": "Lights out by 11 — tomorrow's habits start tonight."
+    },
+    {
+      "id": "row_1749542400000_52",
+      "title": "May 17",
+      "date": "2026-05-17",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_53",
+      "title": "May 19",
+      "date": "2026-05-19",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_54",
+      "title": "May 21",
+      "date": "2026-05-21",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_55",
+      "title": "May 23",
+      "date": "2026-05-23",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_56",
+      "title": "May 25",
+      "date": "2026-05-25",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_57",
+      "title": "May 27",
+      "date": "2026-05-27",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_58",
+      "title": "May 29",
+      "date": "2026-05-29",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_59",
+      "title": "May 31",
+      "date": "2026-05-31",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_60",
+      "title": "Jun 2",
+      "date": "2026-06-02",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_61",
+      "title": "Jun 4",
+      "date": "2026-06-04",
+      "status": "Skipped",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_62",
+      "title": "Jun 6",
+      "date": "2026-06-06",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_63",
+      "title": "Jun 8",
+      "date": "2026-06-08",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    },
+    {
+      "id": "row_1749542400000_64",
+      "title": "Jun 10",
+      "date": "2026-06-10",
+      "status": "Done",
+      "_parent_id": "row_1749542400000_51"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "getting-started",
+      "title": "Start here",
+      "description": "A friendly first workspace: an inbox to capture anything, a five-minute tour, and an onboarding checklist that teaches you databases by using one.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "starter",
+        "onboarding",
+        "basics"
+      ],
+      "previews": [
+        "templates/getting-started/preview/1.png"
+      ],
+      "path": "templates/getting-started/workspace"
+    },
+    {
+      "id": "project-tracker",
+      "title": "Plan and ship a project",
+      "description": "A release hub with a kanban board, deadline calendar, meeting notes, and milestones whose effort totals compute themselves from the task tracker.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "project",
+        "kanban",
+        "team",
+        "formulas"
+      ],
+      "previews": [
+        "templates/project-tracker/preview/1.png"
+      ],
+      "path": "templates/project-tracker/workspace"
+    },
+    {
+      "id": "reading-list",
+      "title": "Track what you read",
+      "description": "Keep every book in one place — what you want to read, what you're reading now, and what you finished — with ratings, genres, and notes you can browse as a gallery or a board.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "reading",
+        "books",
+        "personal",
+        "tracking"
+      ],
+      "previews": [
+        "templates/reading-list/preview/1.png"
+      ],
+      "path": "templates/reading-list/workspace"
+    },
+    {
+      "id": "habit-tracker",
+      "title": "Build daily habits",
+      "description": "Log each day with one click and watch your streaks grow on a 30-day grid. Comes with four example habits and a month of realistic entries so you can see it working immediately.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "habits",
+        "daily",
+        "tracking",
+        "personal",
+        "wellness"
+      ],
+      "previews": [
+        "templates/habit-tracker/preview/1.png"
+      ],
+      "path": "templates/habit-tracker/workspace"
+    },
+    {
+      "id": "travel-planner",
+      "title": "Plan a trip end to end",
+      "description": "Map out every day of a trip on one calendar — flights, hotels, food, sights — and track the budget with category totals and currency conversion. Ships with a 9-day Japan example.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "travel",
+        "trip-planning",
+        "itinerary",
+        "budget"
+      ],
+      "previews": [
+        "templates/travel-planner/preview/1.png"
+      ],
+      "path": "templates/travel-planner/workspace"
+    },
+    {
+      "id": "study-notes",
+      "title": "Take course notes that stay organized",
+      "description": "Keep every course in one place: a home page linking each class, nested lecture notes with real formulas, and an assignment tracker sorted by due date and grouped by status.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "author": {
+        "name": "GalLahat"
+      },
+      "tags": [
+        "education",
+        "study",
+        "note-taking",
+        "students"
+      ],
+      "previews": [
+        "templates/study-notes/preview/1.png"
+      ],
+      "path": "templates/study-notes/workspace"
+    }
+  ]
+}

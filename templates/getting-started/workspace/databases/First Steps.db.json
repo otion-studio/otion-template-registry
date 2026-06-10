@@ -1,0 +1,129 @@
+{
+  "name": "First Steps",
+  "icon": "🚀",
+  "description": "Your onboarding checklist — completing it teaches you databases.",
+  "schema": {
+    "title": { "type": "title" },
+    "status": {
+      "type": "select",
+      "options": [
+        { "name": "Todo", "color": "gray" },
+        { "name": "Doing", "color": "blue" },
+        { "name": "Done", "color": "green" }
+      ]
+    },
+    "takes": {
+      "type": "select",
+      "options": [
+        { "name": "1 min", "color": "green" },
+        { "name": "3 min", "color": "yellow" },
+        { "name": "5 min", "color": "orange" }
+      ]
+    },
+    "minutes": { "type": "number" },
+    "done": { "type": "checkbox" }
+  },
+  "views": [
+    {
+      "name": "List",
+      "type": "table",
+      "visible_properties": ["title", "status", "takes", "minutes", "done"],
+      "property_widths": { "title": 340 },
+      "sorts": [],
+      "filters": []
+    },
+    {
+      "name": "Board",
+      "type": "board",
+      "group_by": "status",
+      "visible_properties": ["title", "takes"],
+      "sorts": [],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1748764800000_0",
+      "title": "Type / on an empty line and add any block",
+      "status": "Todo",
+      "takes": "1 min",
+      "minutes": 1,
+      "done": false
+    },
+    {
+      "id": "row_1748764800000_1",
+      "title": "Drag this row above the first one",
+      "status": "Todo",
+      "takes": "1 min",
+      "minutes": 1,
+      "done": false
+    },
+    {
+      "id": "row_1748764800000_2",
+      "title": "Switch this database to the Board view",
+      "status": "Todo",
+      "takes": "1 min",
+      "minutes": 1,
+      "done": false
+    },
+    {
+      "id": "row_1748764800000_3",
+      "title": "Explore databases",
+      "status": "Doing",
+      "takes": "5 min",
+      "minutes": "__sum__",
+      "done": false
+    },
+    {
+      "id": "row_1748764800000_4",
+      "title": "Open this row and leave yourself a comment",
+      "status": "Doing",
+      "takes": "3 min",
+      "minutes": 3,
+      "done": false,
+      "_parent_id": "row_1748764800000_3"
+    },
+    {
+      "id": "row_1748764800000_5",
+      "title": "Add a column to this database",
+      "status": "Todo",
+      "takes": "3 min",
+      "minutes": 3,
+      "done": false,
+      "_parent_id": "row_1748764800000_3"
+    },
+    {
+      "id": "row_1748764800000_6",
+      "title": "Notice the minutes on this parent row — it sums its sub-items",
+      "status": "Todo",
+      "takes": "1 min",
+      "minutes": 1,
+      "done": false,
+      "_parent_id": "row_1748764800000_3"
+    },
+    {
+      "id": "row_1748764800000_7",
+      "title": "Read the five-minute tour in Learn Otion",
+      "status": "Todo",
+      "takes": "5 min",
+      "minutes": 5,
+      "done": false
+    },
+    {
+      "id": "row_1748764800000_8",
+      "title": "Open the AI agent and say hello",
+      "status": "Todo",
+      "takes": "3 min",
+      "minutes": 3,
+      "done": false
+    },
+    {
+      "id": "row_1748764800000_9",
+      "title": "Open this workspace's folder in your file manager",
+      "status": "Done",
+      "takes": "1 min",
+      "minutes": 1,
+      "done": true
+    }
+  ]
+}

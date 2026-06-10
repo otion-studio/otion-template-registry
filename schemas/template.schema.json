@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/otion-studio/otion-template-registry/schemas/template.schema.json",
+  "title": "Otion template manifest (template.json)",
+  "type": "object",
+  "required": ["id", "title", "description", "version", "license", "author", "tags", "previews"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Lowercase kebab-case. Must equal the template's folder name."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Display name. Lead with the use case (\"Plan and ship a project\"), not the feature."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "One or two sentences shown in the gallery."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semver. Bump on every content change."
+    },
+    "license": {
+      "type": "string",
+      "enum": ["CC0-1.0", "MIT", "CC-BY-4.0"],
+      "description": "Must be permissive — users own the files they instantiate."
+    },
+    "author": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "pattern": "^https://" }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "maxItems": 6
+    },
+    "previews": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.(png|jpg|jpeg|webp)$" },
+      "description": "Filenames inside the template's preview/ folder, in display order."
+    }
+  }
+}

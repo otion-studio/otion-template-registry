@@ -1,0 +1,27 @@
+name: Validate templates
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate manifests, workspace format, security scan, index
+        run: python3 scripts/validate.py
+      - name: Contributor PRs must not touch maintainer files
+        if: github.event_name == 'pull_request' && github.event.pull_request.author_association != 'OWNER' && github.event.pull_request.author_association != 'MEMBER'
+        run: |
+          git fetch origin ${{ github.base_ref }} --depth=1
+          CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          echo "$CHANGED"
+          if echo "$CHANGED" | grep -qE '^(order\.json|index\.json|scripts/|schemas/|\.github/)'; then
+            echo "::error::PRs from contributors may only touch templates/<id>/. order.json, index.json, scripts, schemas and workflows are maintainer-controlled."
+            exit 1
+          fi
