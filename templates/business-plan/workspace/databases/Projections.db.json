@@ -65,7 +65,7 @@
       "id": "row_proj_m02",
       "title": "Month 02 — Feb 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m02\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m02\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m01\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m02\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m02\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m02\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -74,7 +74,7 @@
       "id": "row_proj_m03",
       "title": "Month 03 — Mar 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m03\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m03\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m02\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m03\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m03\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m03\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -83,7 +83,7 @@
       "id": "row_proj_m04",
       "title": "Month 04 — Apr 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m04\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m04\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m03\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m04\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m04\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m04\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -92,7 +92,7 @@
       "id": "row_proj_m05",
       "title": "Month 05 — May 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m05\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m05\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m04\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m05\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m05\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m05\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -101,7 +101,7 @@
       "id": "row_proj_m06",
       "title": "Month 06 — Jun 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m06\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m06\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m05\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m06\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m06\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m06\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -110,7 +110,7 @@
       "id": "row_proj_m07",
       "title": "Month 07 — Jul 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m07\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m07\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m06\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m07\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m07\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m07\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -119,7 +119,7 @@
       "id": "row_proj_m08",
       "title": "Month 08 — Aug 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m08\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m08\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m07\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m08\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m08\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m08\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -128,7 +128,7 @@
       "id": "row_proj_m09",
       "title": "Month 09 — Sep 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m09\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m09\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m08\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m09\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m09\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m09\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -137,7 +137,7 @@
       "id": "row_proj_m10",
       "title": "Month 10 — Oct 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m10\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m10\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m09\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m10\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m10\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m10\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -146,7 +146,7 @@
       "id": "row_proj_m11",
       "title": "Month 11 — Nov 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m11\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m11\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m10\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m11\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m11\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m11\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
@@ -155,7 +155,7 @@
       "id": "row_proj_m12",
       "title": "Month 12 — Dec 2026",
       "customers": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"prev\"},\"b\":{\"op\":\"add\",\"a\":{\"type\":\"num\",\"value\":1},\"b\":{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_growth\",\"key\":\"value\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_churn\",\"key\":\"value\"}}}}",
-      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m12\",\"key\":\"customers\"},\"b\":{\"type\":\"prev\"}}",
+      "new_customers": "__op__::{\"op\":\"sub\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m12\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m11\",\"key\":\"customers\"}}",
       "mrr": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m12\",\"key\":\"customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_price\",\"key\":\"value\"}}",
       "cac_spend": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m12\",\"key\":\"new_customers\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_cac\",\"key\":\"value\"}}",
       "gross_profit": "__op__::{\"op\":\"mul\",\"a\":{\"type\":\"ref\",\"path\":\"Projections.db.json\",\"rowId\":\"row_proj_m12\",\"key\":\"mrr\"},\"b\":{\"type\":\"ref\",\"path\":\"Assumptions.db.json\",\"rowId\":\"row_assume_margin\",\"key\":\"value\"}}"
