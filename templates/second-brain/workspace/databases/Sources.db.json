@@ -30,13 +30,21 @@
         { "name": "★★★★", "color": "yellow" },
         { "name": "★★★★★", "color": "green" }
       ]
-    }
+    },
+    "url": { "type": "url" }
   },
   "views": [
     {
+      "name": "Gallery",
+      "type": "gallery",
+      "visible_properties": ["title", "author", "rating"],
+      "sorts": [],
+      "filters": []
+    },
+    {
       "name": "Table",
       "type": "table",
-      "visible_properties": ["title", "author", "type", "topic", "rating"],
+      "visible_properties": ["title", "author", "type", "topic", "rating", "url"],
       "property_widths": { "title": 280, "author": 180 },
       "sorts": [{ "property": "rating", "direction": "desc" }],
       "filters": []
@@ -57,7 +65,8 @@
       "author": "Cal Newport",
       "type": "Book",
       "topic": ["productivity", "learning"],
-      "rating": "★★★★★"
+      "rating": "★★★★★",
+      "url": "https://calnewport.com/books/deep-work/"
     },
     {
       "id": "row_1717900000000_1",
@@ -65,7 +74,8 @@
       "author": "Daniel Kahneman",
       "type": "Book",
       "topic": ["decisions", "learning"],
-      "rating": "★★★★★"
+      "rating": "★★★★★",
+      "url": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
     },
     {
       "id": "row_1717900000000_2",
@@ -73,7 +83,8 @@
       "author": "Charlie Munger",
       "type": "Book",
       "topic": ["decisions", "learning"],
-      "rating": "★★★★★"
+      "rating": "★★★★★",
+      "url": "https://www.stripe-press.com/poor-charlies-almanack"
     },
     {
       "id": "row_1717900000000_3",
@@ -81,7 +92,8 @@
       "author": "Nassim Nicholas Taleb",
       "type": "Book",
       "topic": ["decisions", "creativity"],
-      "rating": "★★★★"
+      "rating": "★★★★",
+      "url": "https://us.macmillan.com/books/9780812979688/antifragile"
     },
     {
       "id": "row_1717900000000_4",
@@ -89,7 +101,8 @@
       "author": "Sönke Ahrens",
       "type": "Book",
       "topic": ["learning", "writing"],
-      "rating": "★★★★★"
+      "rating": "★★★★★",
+      "url": "https://takesmartnotes.com/"
     },
     {
       "id": "row_1717900000000_5",
@@ -97,7 +110,8 @@
       "author": "Brown, Roediger & McDaniel",
       "type": "Book",
       "topic": ["learning"],
-      "rating": "★★★★"
+      "rating": "★★★★",
+      "url": "https://www.hup.harvard.edu/books/9780674729018"
     },
     {
       "id": "row_1717900000000_6",
@@ -105,7 +119,8 @@
       "author": "James Clear",
       "type": "Book",
       "topic": ["productivity"],
-      "rating": "★★★★"
+      "rating": "★★★★",
+      "url": "https://jamesclear.com/atomic-habits"
     },
     {
       "id": "row_1717900000000_7",
@@ -113,7 +128,8 @@
       "author": "Steven Pressfield",
       "type": "Book",
       "topic": ["creativity", "writing"],
-      "rating": "★★★★"
+      "rating": "★★★★",
+      "url": "https://www.stevenpressfield.com/books/the-war-of-art/"
     },
     {
       "id": "row_1717900000000_8",
@@ -121,7 +137,8 @@
       "author": "Mihaly Csikszentmihalyi",
       "type": "Book",
       "topic": ["productivity", "creativity"],
-      "rating": "★★★★"
+      "rating": "★★★★",
+      "url": "https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi"
     },
     {
       "id": "row_1717900000000_9",
@@ -129,7 +146,8 @@
       "author": "Richard Cook",
       "type": "Essay",
       "topic": ["decisions"],
-      "rating": "★★★★"
+      "rating": "★★★★",
+      "url": "https://how.complexsystems.fail/"
     },
     {
       "id": "row_1717900000000_10",
@@ -137,7 +155,8 @@
       "author": "Richard Hamming",
       "type": "Talk",
       "topic": ["creativity", "learning"],
-      "rating": "★★★★★"
+      "rating": "★★★★★",
+      "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html"
     },
     {
       "id": "row_1717900000000_11",
@@ -145,7 +164,8 @@
       "author": "Steven Johnson",
       "type": "Essay",
       "topic": ["creativity"],
-      "rating": "★★★"
+      "rating": "★★★",
+      "url": "https://www.stevenberlinjohnson.com/the-adjacent-possible"
     }
   ]
 }

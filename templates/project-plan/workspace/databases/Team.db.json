@@ -17,13 +17,14 @@
       ]
     },
     "allocation": { "type": "number" },
-    "email": { "type": "email" }
+    "email": { "type": "email" },
+    "phone": { "type": "phone" }
   },
   "views": [
     {
       "name": "Directory",
       "type": "table",
-      "visible_properties": ["title", "role", "department", "allocation", "email"],
+      "visible_properties": ["title", "role", "department", "allocation", "email", "phone"],
       "property_widths": { "title": 200, "role": 240, "email": 240 },
       "sorts": [{ "property": "department", "direction": "asc" }],
       "filters": []
@@ -44,7 +45,8 @@
       "role": "Program Lead (PMO)",
       "department": "Operations",
       "allocation": 100,
-      "email": "priya.raman@example.com"
+      "email": "priya.raman@example.com",
+      "phone": "+1 555 0142"
     },
     {
       "id": "row_1746200000000_1",
@@ -52,7 +54,8 @@
       "role": "Director of Engineering",
       "department": "Engineering",
       "allocation": 80,
-      "email": "meiling.chen@example.com"
+      "email": "meiling.chen@example.com",
+      "phone": "+1 555 0177"
     },
     {
       "id": "row_1746200000000_2",
@@ -60,7 +63,8 @@
       "role": "Principal Hardware Engineer",
       "department": "Engineering",
       "allocation": 100,
-      "email": "aleksandr.volkov@example.com"
+      "email": "aleksandr.volkov@example.com",
+      "phone": "+1 555 0198"
     },
     {
       "id": "row_1746200000000_3",
@@ -68,7 +72,8 @@
       "role": "Lead App Engineer",
       "department": "Engineering",
       "allocation": 100,
-      "email": "yuki.tanaka@example.com"
+      "email": "yuki.tanaka@example.com",
+      "phone": "+1 555 0123"
     },
     {
       "id": "row_1746200000000_4",
@@ -76,7 +81,8 @@
       "role": "Head of Product Marketing",
       "department": "Marketing",
       "allocation": 75,
-      "email": "daniel.okafor@example.com"
+      "email": "daniel.okafor@example.com",
+      "phone": "+1 555 0164"
     },
     {
       "id": "row_1746200000000_5",
@@ -84,7 +90,8 @@
       "role": "Creative & Brand Manager",
       "department": "Marketing",
       "allocation": 90,
-      "email": "sofia.marino@example.com"
+      "email": "sofia.marino@example.com",
+      "phone": "+1 555 0119"
     },
     {
       "id": "row_1746200000000_6",
@@ -92,7 +99,8 @@
       "role": "VP of Sales",
       "department": "Sales",
       "allocation": 50,
-      "email": "james.whitfield@example.com"
+      "email": "james.whitfield@example.com",
+      "phone": "+1 555 0150"
     },
     {
       "id": "row_1746200000000_7",
@@ -100,7 +108,8 @@
       "role": "Sales Enablement Manager",
       "department": "Sales",
       "allocation": 60,
-      "email": "nadia.haddad@example.com"
+      "email": "nadia.haddad@example.com",
+      "phone": "+1 555 0186"
     },
     {
       "id": "row_1746200000000_8",
@@ -108,7 +117,8 @@
       "role": "Head of Supply Chain",
       "department": "Operations",
       "allocation": 100,
-      "email": "carlos.mendes@example.com"
+      "email": "carlos.mendes@example.com",
+      "phone": "+1 555 0131"
     },
     {
       "id": "row_1746200000000_9",
@@ -116,7 +126,8 @@
       "role": "Finance Business Partner",
       "department": "Finance",
       "allocation": 50,
-      "email": "hannah.bergstrom@example.com"
+      "email": "hannah.bergstrom@example.com",
+      "phone": "+1 555 0172"
     },
     {
       "id": "row_1746200000000_10",
@@ -124,7 +135,8 @@
       "role": "People & Support Operations Lead",
       "department": "People",
       "allocation": 60,
-      "email": "olivia.grant@example.com"
+      "email": "olivia.grant@example.com",
+      "phone": "+1 555 0105"
     }
   ]
 }

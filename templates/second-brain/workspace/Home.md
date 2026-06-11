@@ -88,3 +88,11 @@ The hubs below are themselves Maps of Content. Each gathers the atomic notes in 
 The notes here grew out of a handful of books and essays. Browse them in the source library:
 
 <!-- otion:database {"path":"databases/Sources.db.json","title":"Sources","height":"360"} -->
+
+## Daily practice
+
+A second brain compounds through small daily reps, not heroic sessions. Track the handful of habits that keep it growing.
+
+<!-- otion:info {"color":"green","icon":"CalendarCheck","text":"**Reading the streak grid.** The Tracker view shows the last 30 days as a row of cells per habit. Each cell is one day's entry — **green** means you did it, **gray** means you skipped. Unbroken runs of green are your streaks; the gaps show where a habit slipped. Add a child entry per day (date + status) to keep a habit's row current."} -->
+
+<!-- otion:database {"path":"databases/Daily practice.db.json","title":"Daily practice","height":"420"} -->

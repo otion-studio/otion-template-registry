@@ -1,0 +1,628 @@
+{
+  "name": "Daily practice",
+  "icon": "🌱",
+  "description": "A handful of daily habits and a per-day log of whether each one happened.",
+  "schema": {
+    "title": { "type": "title" },
+    "date": { "type": "date" },
+    "status": {
+      "type": "select",
+      "options": [
+        { "name": "Done", "color": "green" },
+        { "name": "Skipped", "color": "gray" }
+      ]
+    }
+  },
+  "views": [
+    {
+      "name": "Tracker",
+      "type": "habit",
+      "habit_date_property": "date",
+      "habit_status_property": "status",
+      "habit_window": 30,
+      "visible_properties": ["title", "date", "status"],
+      "sorts": [],
+      "filters": []
+    },
+    {
+      "name": "Table",
+      "type": "table",
+      "visible_properties": ["title", "date", "status"],
+      "property_widths": { "title": 280 },
+      "sorts": [{ "property": "date", "direction": "asc" }],
+      "filters": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "row_1747000000000_0",
+      "title": "Morning pages"
+    },
+    {
+      "id": "row_1747000000000_100",
+      "title": "Morning pages — 2026-05-16",
+      "date": "2026-05-16",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_102",
+      "title": "Morning pages — 2026-05-18",
+      "date": "2026-05-18",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_103",
+      "title": "Morning pages — 2026-05-19",
+      "date": "2026-05-19",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_104",
+      "title": "Morning pages — 2026-05-20",
+      "date": "2026-05-20",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_106",
+      "title": "Morning pages — 2026-05-22",
+      "date": "2026-05-22",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_107",
+      "title": "Morning pages — 2026-05-23",
+      "date": "2026-05-23",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_108",
+      "title": "Morning pages — 2026-05-24",
+      "date": "2026-05-24",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_109",
+      "title": "Morning pages — 2026-05-25",
+      "date": "2026-05-25",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_112",
+      "title": "Morning pages — 2026-05-28",
+      "date": "2026-05-28",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_113",
+      "title": "Morning pages — 2026-05-29",
+      "date": "2026-05-29",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_114",
+      "title": "Morning pages — 2026-05-30",
+      "date": "2026-05-30",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_115",
+      "title": "Morning pages — 2026-05-31",
+      "date": "2026-05-31",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_116",
+      "title": "Morning pages — 2026-06-01",
+      "date": "2026-06-01",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_117",
+      "title": "Morning pages — 2026-06-02",
+      "date": "2026-06-02",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_118",
+      "title": "Morning pages — 2026-06-03",
+      "date": "2026-06-03",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_119",
+      "title": "Morning pages — 2026-06-04",
+      "date": "2026-06-04",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_120",
+      "title": "Morning pages — 2026-06-05",
+      "date": "2026-06-05",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_121",
+      "title": "Morning pages — 2026-06-06",
+      "date": "2026-06-06",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_122",
+      "title": "Morning pages — 2026-06-07",
+      "date": "2026-06-07",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_124",
+      "title": "Morning pages — 2026-06-09",
+      "date": "2026-06-09",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_125",
+      "title": "Morning pages — 2026-06-10",
+      "date": "2026-06-10",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_126",
+      "title": "Morning pages — 2026-06-11",
+      "date": "2026-06-11",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_0"
+    },
+    {
+      "id": "row_1747000000000_1",
+      "title": "Read 20 minutes"
+    },
+    {
+      "id": "row_1747000000000_200",
+      "title": "Read 20 minutes — 2026-05-16",
+      "date": "2026-05-16",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_201",
+      "title": "Read 20 minutes — 2026-05-17",
+      "date": "2026-05-17",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_202",
+      "title": "Read 20 minutes — 2026-05-18",
+      "date": "2026-05-18",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_203",
+      "title": "Read 20 minutes — 2026-05-19",
+      "date": "2026-05-19",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_204",
+      "title": "Read 20 minutes — 2026-05-20",
+      "date": "2026-05-20",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_205",
+      "title": "Read 20 minutes — 2026-05-21",
+      "date": "2026-05-21",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_206",
+      "title": "Read 20 minutes — 2026-05-22",
+      "date": "2026-05-22",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_207",
+      "title": "Read 20 minutes — 2026-05-23",
+      "date": "2026-05-23",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_208",
+      "title": "Read 20 minutes — 2026-05-24",
+      "date": "2026-05-24",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_209",
+      "title": "Read 20 minutes — 2026-05-25",
+      "date": "2026-05-25",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_210",
+      "title": "Read 20 minutes — 2026-05-26",
+      "date": "2026-05-26",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_213",
+      "title": "Read 20 minutes — 2026-05-29",
+      "date": "2026-05-29",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_215",
+      "title": "Read 20 minutes — 2026-05-31",
+      "date": "2026-05-31",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_216",
+      "title": "Read 20 minutes — 2026-06-01",
+      "date": "2026-06-01",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_218",
+      "title": "Read 20 minutes — 2026-06-03",
+      "date": "2026-06-03",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_220",
+      "title": "Read 20 minutes — 2026-06-05",
+      "date": "2026-06-05",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_221",
+      "title": "Read 20 minutes — 2026-06-06",
+      "date": "2026-06-06",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_224",
+      "title": "Read 20 minutes — 2026-06-09",
+      "date": "2026-06-09",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_225",
+      "title": "Read 20 minutes — 2026-06-10",
+      "date": "2026-06-10",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_226",
+      "title": "Read 20 minutes — 2026-06-11",
+      "date": "2026-06-11",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_1"
+    },
+    {
+      "id": "row_1747000000000_2",
+      "title": "Walk"
+    },
+    {
+      "id": "row_1747000000000_301",
+      "title": "Walk — 2026-05-17",
+      "date": "2026-05-17",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_302",
+      "title": "Walk — 2026-05-18",
+      "date": "2026-05-18",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_303",
+      "title": "Walk — 2026-05-19",
+      "date": "2026-05-19",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_304",
+      "title": "Walk — 2026-05-20",
+      "date": "2026-05-20",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_305",
+      "title": "Walk — 2026-05-21",
+      "date": "2026-05-21",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_306",
+      "title": "Walk — 2026-05-22",
+      "date": "2026-05-22",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_307",
+      "title": "Walk — 2026-05-23",
+      "date": "2026-05-23",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_308",
+      "title": "Walk — 2026-05-24",
+      "date": "2026-05-24",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_309",
+      "title": "Walk — 2026-05-25",
+      "date": "2026-05-25",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_310",
+      "title": "Walk — 2026-05-26",
+      "date": "2026-05-26",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_312",
+      "title": "Walk — 2026-05-28",
+      "date": "2026-05-28",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_314",
+      "title": "Walk — 2026-05-30",
+      "date": "2026-05-30",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_315",
+      "title": "Walk — 2026-05-31",
+      "date": "2026-05-31",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_316",
+      "title": "Walk — 2026-06-01",
+      "date": "2026-06-01",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_318",
+      "title": "Walk — 2026-06-03",
+      "date": "2026-06-03",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_319",
+      "title": "Walk — 2026-06-04",
+      "date": "2026-06-04",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_321",
+      "title": "Walk — 2026-06-06",
+      "date": "2026-06-06",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_322",
+      "title": "Walk — 2026-06-07",
+      "date": "2026-06-07",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_323",
+      "title": "Walk — 2026-06-08",
+      "date": "2026-06-08",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_324",
+      "title": "Walk — 2026-06-09",
+      "date": "2026-06-09",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_325",
+      "title": "Walk — 2026-06-10",
+      "date": "2026-06-10",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_326",
+      "title": "Walk — 2026-06-11",
+      "date": "2026-06-11",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_2"
+    },
+    {
+      "id": "row_1747000000000_3",
+      "title": "No phone before noon"
+    },
+    {
+      "id": "row_1747000000000_401",
+      "title": "No phone before noon — 2026-05-17",
+      "date": "2026-05-17",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_402",
+      "title": "No phone before noon — 2026-05-18",
+      "date": "2026-05-18",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_404",
+      "title": "No phone before noon — 2026-05-20",
+      "date": "2026-05-20",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_406",
+      "title": "No phone before noon — 2026-05-22",
+      "date": "2026-05-22",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_408",
+      "title": "No phone before noon — 2026-05-24",
+      "date": "2026-05-24",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_409",
+      "title": "No phone before noon — 2026-05-25",
+      "date": "2026-05-25",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_411",
+      "title": "No phone before noon — 2026-05-27",
+      "date": "2026-05-27",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_412",
+      "title": "No phone before noon — 2026-05-28",
+      "date": "2026-05-28",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_413",
+      "title": "No phone before noon — 2026-05-29",
+      "date": "2026-05-29",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_415",
+      "title": "No phone before noon — 2026-05-31",
+      "date": "2026-05-31",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_416",
+      "title": "No phone before noon — 2026-06-01",
+      "date": "2026-06-01",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_418",
+      "title": "No phone before noon — 2026-06-03",
+      "date": "2026-06-03",
+      "status": "Skipped",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_419",
+      "title": "No phone before noon — 2026-06-04",
+      "date": "2026-06-04",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_420",
+      "title": "No phone before noon — 2026-06-05",
+      "date": "2026-06-05",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_422",
+      "title": "No phone before noon — 2026-06-07",
+      "date": "2026-06-07",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_423",
+      "title": "No phone before noon — 2026-06-08",
+      "date": "2026-06-08",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_424",
+      "title": "No phone before noon — 2026-06-09",
+      "date": "2026-06-09",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    },
+    {
+      "id": "row_1747000000000_426",
+      "title": "No phone before noon — 2026-06-11",
+      "date": "2026-06-11",
+      "status": "Done",
+      "_parent_id": "row_1747000000000_3"
+    }
+  ]
+}

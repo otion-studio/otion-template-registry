@@ -31,6 +31,21 @@ When something is blocked for more than 48 hours, escalate in this order:
 2. If unresolved, bring it to the Program Lead (Priya Raman).
 3. If it threatens the launch date, escalate to the executive sponsor (Marcus Feld) the same day.
 
+The same decision path, drawn out:
+
+```mermaid
+flowchart TD
+  A[Contributor hits a blocker] --> B{Resolved in 48h?}
+  B -- Yes --> Z[Close it out]
+  B -- No --> C[Workstream Lead]
+  C --> D{Threatens scope, date, or budget?}
+  D -- No --> C2[Lead resolves and logs it]
+  D -- Yes --> E[Program Lead - Priya Raman]
+  E --> F{Launch date at risk?}
+  F -- No --> G[Steering committee review]
+  F -- Yes --> H[Executive Sponsor - Marcus Feld]
+```
+
 ## Communications checklist
 
 <!-- otion:todo {"text":"Create the #aurora-launch team space and add all leads","id":"todo-comm-0001","created":"2026-05-07T09:00:00.000Z"} -->

@@ -48,7 +48,12 @@
     "start": { "type": "date" },
     "due": { "type": "date" },
     "effort_days": { "type": "number" },
-    "blocked_by": { "type": "row_ref", "ref_db": "Tasks.db.json" }
+    "avg_effort": { "type": "number" },
+    "min_effort": { "type": "number" },
+    "max_effort": { "type": "number" },
+    "blocked_by": { "type": "row_ref", "ref_db": "Tasks.db.json" },
+    "created": { "type": "created_time" },
+    "modified": { "type": "modified_time" }
   },
   "views": [
     {
@@ -63,7 +68,7 @@
       "name": "By Phase",
       "type": "table",
       "group_by": "phase",
-      "visible_properties": ["title", "phase", "department", "status", "priority", "owner", "start", "due", "effort_days"],
+      "visible_properties": ["title", "phase", "department", "status", "priority", "owner", "start", "due", "effort_days", "avg_effort", "min_effort", "max_effort"],
       "property_widths": { "title": 360, "owner": 150 },
       "sorts": [{ "property": "phase", "direction": "asc" }],
       "filters": []
@@ -96,7 +101,12 @@
       "owner": "Priya Raman",
       "start": "2026-05-04",
       "due": "2026-06-12",
-      "effort_days": "__sum__"
+      "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-05-04T09:00:00.000Z",
+      "modified": "2026-06-12T17:30:00.000Z"
     },
     {
       "id": "row_1746000000000_1",
@@ -109,6 +119,11 @@
       "start": "2026-05-04",
       "due": "2026-05-22",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-05-04T09:00:00.000Z",
+      "modified": "2026-05-22T17:30:00.000Z",
       "_parent_id": "row_1746000000000_0"
     },
     {
@@ -122,6 +137,11 @@
       "start": "2026-05-04",
       "due": "2026-05-15",
       "effort_days": 8,
+      "avg_effort": 8,
+      "min_effort": 8,
+      "max_effort": 8,
+      "created": "2026-05-04T09:00:00.000Z",
+      "modified": "2026-05-15T17:30:00.000Z",
       "_parent_id": "row_1746000000000_1"
     },
     {
@@ -135,6 +155,11 @@
       "start": "2026-05-11",
       "due": "2026-05-20",
       "effort_days": 5,
+      "avg_effort": 5,
+      "min_effort": 5,
+      "max_effort": 5,
+      "created": "2026-05-11T09:00:00.000Z",
+      "modified": "2026-05-20T17:30:00.000Z",
       "_parent_id": "row_1746000000000_1"
     },
     {
@@ -148,6 +173,11 @@
       "start": "2026-05-20",
       "due": "2026-05-22",
       "effort_days": 3,
+      "avg_effort": 3,
+      "min_effort": 3,
+      "max_effort": 3,
+      "created": "2026-05-20T09:00:00.000Z",
+      "modified": "2026-05-22T17:30:00.000Z",
       "_parent_id": "row_1746000000000_1"
     },
     {
@@ -161,6 +191,11 @@
       "start": "2026-05-11",
       "due": "2026-06-05",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-05-11T09:00:00.000Z",
+      "modified": "2026-06-05T17:30:00.000Z",
       "_parent_id": "row_1746000000000_0"
     },
     {
@@ -174,6 +209,11 @@
       "start": "2026-05-11",
       "due": "2026-05-25",
       "effort_days": 9,
+      "avg_effort": 9,
+      "min_effort": 9,
+      "max_effort": 9,
+      "created": "2026-05-11T09:00:00.000Z",
+      "modified": "2026-05-25T17:30:00.000Z",
       "_parent_id": "row_1746000000000_5"
     },
     {
@@ -187,6 +227,11 @@
       "start": "2026-05-18",
       "due": "2026-06-05",
       "effort_days": 12,
+      "avg_effort": 12,
+      "min_effort": 12,
+      "max_effort": 12,
+      "created": "2026-05-18T09:00:00.000Z",
+      "modified": "2026-06-05T17:30:00.000Z",
       "_parent_id": "row_1746000000000_5"
     },
     {
@@ -200,6 +245,11 @@
       "start": "2026-05-25",
       "due": "2026-06-12",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-05-25T09:00:00.000Z",
+      "modified": "2026-06-12T17:30:00.000Z",
       "_parent_id": "row_1746000000000_0"
     },
     {
@@ -213,6 +263,11 @@
       "start": "2026-05-25",
       "due": "2026-06-04",
       "effort_days": 6,
+      "avg_effort": 6,
+      "min_effort": 6,
+      "max_effort": 6,
+      "created": "2026-05-25T09:00:00.000Z",
+      "modified": "2026-06-04T17:30:00.000Z",
       "_parent_id": "row_1746000000000_8"
     },
     {
@@ -226,6 +281,11 @@
       "start": "2026-06-04",
       "due": "2026-06-12",
       "effort_days": 4,
+      "avg_effort": 4,
+      "min_effort": 4,
+      "max_effort": 4,
+      "created": "2026-06-04T09:00:00.000Z",
+      "modified": "2026-06-12T17:30:00.000Z",
       "_parent_id": "row_1746000000000_8"
     },
     {
@@ -238,7 +298,12 @@
       "owner": "Mei-Ling Chen",
       "start": "2026-06-15",
       "due": "2026-08-21",
-      "effort_days": "__sum__"
+      "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-06-15T09:00:00.000Z",
+      "modified": "2026-08-21T17:30:00.000Z"
     },
     {
       "id": "row_1746000000000_12",
@@ -251,6 +316,11 @@
       "start": "2026-06-15",
       "due": "2026-08-07",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-06-15T09:00:00.000Z",
+      "modified": "2026-08-07T17:30:00.000Z",
       "_parent_id": "row_1746000000000_11"
     },
     {
@@ -264,6 +334,11 @@
       "start": "2026-06-15",
       "due": "2026-07-03",
       "effort_days": 14,
+      "avg_effort": 14,
+      "min_effort": 14,
+      "max_effort": 14,
+      "created": "2026-06-15T09:00:00.000Z",
+      "modified": "2026-07-03T17:30:00.000Z",
       "_parent_id": "row_1746000000000_12",
       "blocked_by": "Tasks.db.json||row_1746000000000_6"
     },
@@ -278,6 +353,11 @@
       "start": "2026-07-06",
       "due": "2026-08-07",
       "effort_days": 18,
+      "avg_effort": 18,
+      "min_effort": 18,
+      "max_effort": 18,
+      "created": "2026-07-06T09:00:00.000Z",
+      "modified": "2026-08-07T17:30:00.000Z",
       "_parent_id": "row_1746000000000_12",
       "blocked_by": "Tasks.db.json||row_1746000000000_13"
     },
@@ -292,6 +372,11 @@
       "start": "2026-07-20",
       "due": "2026-08-05",
       "effort_days": 10,
+      "avg_effort": 10,
+      "min_effort": 10,
+      "max_effort": 10,
+      "created": "2026-07-20T09:00:00.000Z",
+      "modified": "2026-08-05T17:30:00.000Z",
       "_parent_id": "row_1746000000000_12",
       "blocked_by": "Tasks.db.json||row_1746000000000_13"
     },
@@ -306,6 +391,11 @@
       "start": "2026-06-15",
       "due": "2026-08-21",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-06-15T09:00:00.000Z",
+      "modified": "2026-08-21T17:30:00.000Z",
       "_parent_id": "row_1746000000000_11"
     },
     {
@@ -319,6 +409,11 @@
       "start": "2026-06-15",
       "due": "2026-07-10",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-06-15T09:00:00.000Z",
+      "modified": "2026-07-10T17:30:00.000Z",
       "_parent_id": "row_1746000000000_16",
       "blocked_by": "Tasks.db.json||row_1746000000000_7"
     },
@@ -333,6 +428,11 @@
       "start": "2026-06-15",
       "due": "2026-06-30",
       "effort_days": 8,
+      "avg_effort": 8,
+      "min_effort": 8,
+      "max_effort": 8,
+      "created": "2026-06-15T09:00:00.000Z",
+      "modified": "2026-06-30T17:30:00.000Z",
       "_parent_id": "row_1746000000000_17"
     },
     {
@@ -346,6 +446,11 @@
       "start": "2026-06-25",
       "due": "2026-07-10",
       "effort_days": 9,
+      "avg_effort": 9,
+      "min_effort": 9,
+      "max_effort": 9,
+      "created": "2026-06-25T09:00:00.000Z",
+      "modified": "2026-07-10T17:30:00.000Z",
       "_parent_id": "row_1746000000000_17"
     },
     {
@@ -359,6 +464,11 @@
       "start": "2026-07-10",
       "due": "2026-08-07",
       "effort_days": 15,
+      "avg_effort": 15,
+      "min_effort": 15,
+      "max_effort": 15,
+      "created": "2026-07-10T09:00:00.000Z",
+      "modified": "2026-08-07T17:30:00.000Z",
       "_parent_id": "row_1746000000000_16"
     },
     {
@@ -372,6 +482,11 @@
       "start": "2026-08-03",
       "due": "2026-08-21",
       "effort_days": 7,
+      "avg_effort": 7,
+      "min_effort": 7,
+      "max_effort": 7,
+      "created": "2026-08-03T09:00:00.000Z",
+      "modified": "2026-08-21T17:30:00.000Z",
       "_parent_id": "row_1746000000000_16"
     },
     {
@@ -385,6 +500,11 @@
       "start": "2026-07-01",
       "due": "2026-08-21",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-07-01T09:00:00.000Z",
+      "modified": "2026-08-21T17:30:00.000Z",
       "_parent_id": "row_1746000000000_11"
     },
     {
@@ -398,6 +518,11 @@
       "start": "2026-07-01",
       "due": "2026-07-25",
       "effort_days": 11,
+      "avg_effort": 11,
+      "min_effort": 11,
+      "max_effort": 11,
+      "created": "2026-07-01T09:00:00.000Z",
+      "modified": "2026-07-25T17:30:00.000Z",
       "_parent_id": "row_1746000000000_22"
     },
     {
@@ -411,6 +536,11 @@
       "start": "2026-07-25",
       "due": "2026-08-21",
       "effort_days": 13,
+      "avg_effort": 13,
+      "min_effort": 13,
+      "max_effort": 13,
+      "created": "2026-07-25T09:00:00.000Z",
+      "modified": "2026-08-21T17:30:00.000Z",
       "_parent_id": "row_1746000000000_22",
       "blocked_by": "Tasks.db.json||row_1746000000000_23"
     },
@@ -424,7 +554,12 @@
       "owner": "Daniel Okafor",
       "start": "2026-08-03",
       "due": "2026-09-18",
-      "effort_days": "__sum__"
+      "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-08-03T09:00:00.000Z",
+      "modified": "2026-09-18T17:30:00.000Z"
     },
     {
       "id": "row_1746000000000_26",
@@ -437,6 +572,11 @@
       "start": "2026-08-03",
       "due": "2026-09-04",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-08-03T09:00:00.000Z",
+      "modified": "2026-09-04T17:30:00.000Z",
       "_parent_id": "row_1746000000000_25"
     },
     {
@@ -450,6 +590,11 @@
       "start": "2026-08-03",
       "due": "2026-08-28",
       "effort_days": 16,
+      "avg_effort": 16,
+      "min_effort": 16,
+      "max_effort": 16,
+      "created": "2026-08-03T09:00:00.000Z",
+      "modified": "2026-08-28T17:30:00.000Z",
       "_parent_id": "row_1746000000000_26",
       "blocked_by": "Tasks.db.json||row_1746000000000_14"
     },
@@ -464,6 +609,11 @@
       "start": "2026-08-17",
       "due": "2026-09-04",
       "effort_days": 9,
+      "avg_effort": 9,
+      "min_effort": 9,
+      "max_effort": 9,
+      "created": "2026-08-17T09:00:00.000Z",
+      "modified": "2026-09-04T17:30:00.000Z",
       "_parent_id": "row_1746000000000_26"
     },
     {
@@ -477,6 +627,11 @@
       "start": "2026-08-24",
       "due": "2026-09-18",
       "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-08-24T09:00:00.000Z",
+      "modified": "2026-09-18T17:30:00.000Z",
       "_parent_id": "row_1746000000000_25"
     },
     {
@@ -490,6 +645,11 @@
       "start": "2026-08-24",
       "due": "2026-09-12",
       "effort_days": 12,
+      "avg_effort": 12,
+      "min_effort": 12,
+      "max_effort": 12,
+      "created": "2026-08-24T09:00:00.000Z",
+      "modified": "2026-09-12T17:30:00.000Z",
       "_parent_id": "row_1746000000000_29"
     },
     {
@@ -503,6 +663,11 @@
       "start": "2026-09-08",
       "due": "2026-09-18",
       "effort_days": 5,
+      "avg_effort": 5,
+      "min_effort": 5,
+      "max_effort": 5,
+      "created": "2026-09-08T09:00:00.000Z",
+      "modified": "2026-09-18T17:30:00.000Z",
       "_parent_id": "row_1746000000000_29",
       "blocked_by": "Tasks.db.json||row_1746000000000_30"
     },
@@ -516,7 +681,12 @@
       "owner": "Priya Raman",
       "start": "2026-09-21",
       "due": "2026-10-09",
-      "effort_days": "__sum__"
+      "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-09-21T09:00:00.000Z",
+      "modified": "2026-10-09T17:30:00.000Z"
     },
     {
       "id": "row_1746000000000_33",
@@ -529,6 +699,11 @@
       "start": "2026-09-21",
       "due": "2026-10-02",
       "effort_days": 9,
+      "avg_effort": 9,
+      "min_effort": 9,
+      "max_effort": 9,
+      "created": "2026-09-21T09:00:00.000Z",
+      "modified": "2026-10-02T17:30:00.000Z",
       "_parent_id": "row_1746000000000_32",
       "blocked_by": "Tasks.db.json||row_1746000000000_24"
     },
@@ -543,6 +718,11 @@
       "start": "2026-09-28",
       "due": "2026-10-07",
       "effort_days": 6,
+      "avg_effort": 6,
+      "min_effort": 6,
+      "max_effort": 6,
+      "created": "2026-09-28T09:00:00.000Z",
+      "modified": "2026-10-07T17:30:00.000Z",
       "_parent_id": "row_1746000000000_32",
       "blocked_by": "Tasks.db.json||row_1746000000000_33"
     },
@@ -557,6 +737,11 @@
       "start": "2026-10-05",
       "due": "2026-10-09",
       "effort_days": 4,
+      "avg_effort": 4,
+      "min_effort": 4,
+      "max_effort": 4,
+      "created": "2026-10-05T09:00:00.000Z",
+      "modified": "2026-10-09T17:30:00.000Z",
       "_parent_id": "row_1746000000000_32",
       "blocked_by": "Tasks.db.json||row_1746000000000_28"
     },
@@ -571,6 +756,11 @@
       "start": "2026-10-01",
       "due": "2026-10-09",
       "effort_days": 5,
+      "avg_effort": 5,
+      "min_effort": 5,
+      "max_effort": 5,
+      "created": "2026-10-01T09:00:00.000Z",
+      "modified": "2026-10-09T17:30:00.000Z",
       "_parent_id": "row_1746000000000_32"
     },
     {
@@ -583,7 +773,12 @@
       "owner": "Priya Raman",
       "start": "2026-10-12",
       "due": "2026-10-30",
-      "effort_days": "__sum__"
+      "effort_days": "__sum__",
+      "avg_effort": "__avg__",
+      "min_effort": "__min__",
+      "max_effort": "__max__",
+      "created": "2026-10-12T09:00:00.000Z",
+      "modified": "2026-10-30T17:30:00.000Z"
     },
     {
       "id": "row_1746000000000_38",
@@ -596,6 +791,11 @@
       "start": "2026-10-12",
       "due": "2026-10-23",
       "effort_days": 4,
+      "avg_effort": 4,
+      "min_effort": 4,
+      "max_effort": 4,
+      "created": "2026-10-12T09:00:00.000Z",
+      "modified": "2026-10-23T17:30:00.000Z",
       "_parent_id": "row_1746000000000_37"
     },
     {
@@ -609,6 +809,11 @@
       "start": "2026-10-19",
       "due": "2026-10-30",
       "effort_days": 7,
+      "avg_effort": 7,
+      "min_effort": 7,
+      "max_effort": 7,
+      "created": "2026-10-19T09:00:00.000Z",
+      "modified": "2026-10-30T17:30:00.000Z",
       "_parent_id": "row_1746000000000_37"
     },
     {
@@ -622,6 +827,11 @@
       "start": "2026-10-12",
       "due": "2026-10-26",
       "effort_days": 5,
+      "avg_effort": 5,
+      "min_effort": 5,
+      "max_effort": 5,
+      "created": "2026-10-12T09:00:00.000Z",
+      "modified": "2026-10-26T17:30:00.000Z",
       "_parent_id": "row_1746000000000_37"
     },
     {
@@ -635,6 +845,11 @@
       "start": "2026-10-12",
       "due": "2026-10-28",
       "effort_days": 4,
+      "avg_effort": 4,
+      "min_effort": 4,
+      "max_effort": 4,
+      "created": "2026-10-12T09:00:00.000Z",
+      "modified": "2026-10-28T17:30:00.000Z",
       "_parent_id": "row_1746000000000_37"
     }
   ]

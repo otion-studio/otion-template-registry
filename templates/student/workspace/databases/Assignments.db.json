@@ -26,13 +26,14 @@
       ]
     },
     "grade": { "type": "text" },
-    "weight": { "type": "number" }
+    "weight": { "type": "number" },
+    "course_page": { "type": "page_ref" }
   },
   "views": [
     {
       "name": "By due date",
       "type": "table",
-      "visible_properties": ["title", "course", "due", "status", "grade", "weight"],
+      "visible_properties": ["title", "course", "due", "status", "grade", "weight", "course_page"],
       "property_widths": { "title": 280, "course": 150 },
       "sorts": [{ "property": "due", "direction": "asc" }],
       "filters": []
@@ -62,7 +63,8 @@
       "due": "2026-09-25",
       "status": "Graded",
       "grade": "94%",
-      "weight": 4
+      "weight": 4,
+      "course_page": "Calculus II.md"
     },
     {
       "id": "row_1758240000000_1",
@@ -71,7 +73,8 @@
       "due": "2026-09-29",
       "status": "Graded",
       "grade": "88%",
-      "weight": 4
+      "weight": 4,
+      "course_page": "Microeconomics.md"
     },
     {
       "id": "row_1758240000000_2",
@@ -80,7 +83,8 @@
       "due": "2026-10-02",
       "status": "Graded",
       "grade": "91%",
-      "weight": 5
+      "weight": 5,
+      "course_page": "Statistics.md"
     },
     {
       "id": "row_1758240000000_3",
@@ -89,7 +93,8 @@
       "due": "2026-10-07",
       "status": "Submitted",
       "grade": "",
-      "weight": 5
+      "weight": 5,
+      "course_page": "Modern History.md"
     },
     {
       "id": "row_1758240000000_4",
@@ -98,7 +103,8 @@
       "due": "2026-10-12",
       "status": "Submitted",
       "grade": "",
-      "weight": 4
+      "weight": 4,
+      "course_page": "Linear Algebra.md"
     },
     {
       "id": "row_1758240000000_5",
@@ -107,7 +113,8 @@
       "due": "2026-10-16",
       "status": "In progress",
       "grade": "",
-      "weight": 4
+      "weight": 4,
+      "course_page": "Calculus II.md"
     },
     {
       "id": "row_1758240000000_6",
@@ -116,7 +123,8 @@
       "due": "2026-10-20",
       "status": "In progress",
       "grade": "",
-      "weight": 15
+      "weight": 15,
+      "course_page": "English Literature.md"
     },
     {
       "id": "row_1758240000000_7",
@@ -125,7 +133,8 @@
       "due": "2026-10-23",
       "status": "Not started",
       "grade": "",
-      "weight": 4
+      "weight": 4,
+      "course_page": "Microeconomics.md"
     },
     {
       "id": "row_1758240000000_8",
@@ -134,7 +143,8 @@
       "due": "2026-10-30",
       "status": "Not started",
       "grade": "",
-      "weight": 5
+      "weight": 5,
+      "course_page": "Statistics.md"
     },
     {
       "id": "row_1758240000000_9",
@@ -143,7 +153,8 @@
       "due": "2026-11-06",
       "status": "Not started",
       "grade": "",
-      "weight": 10
+      "weight": 10,
+      "course_page": "Modern History.md"
     },
     {
       "id": "row_1758240000000_10",
@@ -152,7 +163,8 @@
       "due": "2026-11-13",
       "status": "Not started",
       "grade": "",
-      "weight": 4
+      "weight": 4,
+      "course_page": "Linear Algebra.md"
     },
     {
       "id": "row_1758240000000_11",
@@ -161,7 +173,8 @@
       "due": "2026-11-20",
       "status": "Not started",
       "grade": "",
-      "weight": 4
+      "weight": 4,
+      "course_page": "Calculus II.md"
     },
     {
       "id": "row_1758240000000_12",
@@ -170,7 +183,8 @@
       "due": "2026-11-27",
       "status": "Not started",
       "grade": "",
-      "weight": 20
+      "weight": 20,
+      "course_page": "English Literature.md"
     },
     {
       "id": "row_1758240000000_13",
@@ -179,7 +193,8 @@
       "due": "2026-12-04",
       "status": "Not started",
       "grade": "",
-      "weight": 15
+      "weight": 15,
+      "course_page": "Statistics.md"
     }
   ]
 }

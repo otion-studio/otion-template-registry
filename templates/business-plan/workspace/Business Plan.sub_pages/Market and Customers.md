@@ -13,6 +13,24 @@ NestRoute serves households that cook at home most nights and feel the planning 
 - **Couples optimizing time and money.** Cook most nights, hate food waste, want a single list that fits a real budget.
 - **Single-household planners.** Cook for one or two, struggle with portioning and repetition more than with effort.
 
+Here is how we expect the early subscriber base to break down across those groups:
+
+```mermaid
+pie title Target market segmentation
+  "Dual-income families" : 45
+  "Time-pressed couples" : 30
+  "Single-household planners" : 18
+  "Empty-nesters cooking light" : 7
+```
+
+To make the two biggest groups concrete, here are the personas we design and write copy for:
+
+<!-- otion:columns {"count":2} -->
+
+**The Tuesday-night family.** Two parents, two kids, both working. They open the app at 6pm with no plan and twenty minutes. They want one balanced week, one list, and zero arguments about what's for dinner.
+
+**The budget-minded couple.** No kids, two incomes, a strong distaste for waste. They cook five nights a week and care most about a single tidy list that respects a weekly grocery budget and reuses what's already in the pantry.
+
 ## Why they pay
 
 <!-- otion:info {"color":"green","icon":"HeartHandshake","text":"The job isn't \"give me recipes\" — recipes are free everywhere. The job is **make the weekly decision and logistics disappear**. People pay 12 USD/mo for the same reason they pay for any small subscription that quietly removes a recurring chore."} -->

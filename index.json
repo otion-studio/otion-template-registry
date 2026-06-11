@@ -22,6 +22,7 @@
         "Inbox.md",
         "Learn Otion.md",
         "Learn Otion.sub_pages/Databases and views.md",
+        "Learn Otion.sub_pages/Editing basics.files/welcome.svg",
         "Learn Otion.sub_pages/Editing basics.md",
         "Learn Otion.sub_pages/Everything is a file.md",
         "Learn Otion.sub_pages/Meet the AI agent.md",
@@ -157,6 +158,7 @@
         "The adjacent possible.md",
         "The two-minute rule.md",
         "Via negativa.md",
+        "databases/Daily practice.db.json",
         "databases/Sources.db.json"
       ]
     },
