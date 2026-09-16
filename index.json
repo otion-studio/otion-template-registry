@@ -5,7 +5,7 @@
       "id": "getting-started",
       "title": "Start here",
       "description": "A friendly first workspace: an inbox to capture anything, a five-minute tour, and an onboarding checklist that teaches you databases by using one.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "CC0-1.0",
       "author": {
         "name": "GalLahat"
@@ -25,7 +25,7 @@
         "Learn Otion.sub_pages/Editing basics.files/welcome.svg",
         "Learn Otion.sub_pages/Editing basics.md",
         "Learn Otion.sub_pages/Everything is a file.md",
-        "Learn Otion.sub_pages/Meet the AI agent.md",
+        "Learn Otion.sub_pages/External agents.md",
         "databases/First Steps.db.json"
       ]
     },

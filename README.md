@@ -32,7 +32,7 @@ Updates and removals are also pull requests. Everything is a reviewable diff; th
 
 ## What a template folder must NOT contain
 
-App-generated files are created by Otion at instantiation time and are rejected by the scan: `project.otion`, `AGENTS.md`, `ai-settings.json`, `backup/`, and anything dot-prefixed. A template is only the unique content.
+App-generated files are created by Otion at instantiation time and are rejected by the scan: `project.otion`, `AGENTS.md`, `agents.readme.md`, `skillsandtools/`, `ai-settings.json`, `backup/`, and anything dot-prefixed. A template is only the unique content.
 
 ## Licensing
 

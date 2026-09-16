@@ -111,7 +111,7 @@
     },
     {
       "id": "row_1748764800000_8",
-      "title": "Open the AI agent and say hello",
+      "title": "Point your external agent to agents.readme.md",
       "status": "Todo",
       "takes": "3 min",
       "minutes": 3,

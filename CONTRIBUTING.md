@@ -3,7 +3,7 @@
 ## Submit
 
 1. Build your workspace in Otion until it looks the way you want.
-2. Copy the content files into `templates/<your-id>/workspace/` — pages (`.md`), `databases/`, and any local assets. **Do not include** `project.otion`, `AGENTS.md`, `ai-settings.json`, `backup/`, or dot-files; Otion generates those.
+2. Copy the content files into `templates/<your-id>/workspace/` — pages (`.md`), `databases/`, and any local assets. **Do not include** `project.otion`, `AGENTS.md`, `agents.readme.md`, `skillsandtools/`, `ai-settings.json`, `backup/`, or dot-files; Otion generates those.
 3. Add `templates/<your-id>/template.json` following [`schemas/template.schema.json`](schemas/template.schema.json). Title with the use case ("Plan and ship a project"), not the feature ("Board view").
 4. Add a square (1:1) icon image — `templates/<your-id>/icon.png` (≤ 512 KB) — and name it in the manifest's `icon` field.
 5. Run the validator from the repo root and fix anything it reports:
@@ -20,7 +20,7 @@
 - **Self-contained.** All assets are local files inside the template. No remote images, no network references of any kind.
 - **No agent steering.** Page text must not contain instructions aimed at AI agents. The scan rejects known injection phrases; reviewers reject creative ones.
 - **Size.** ≤ 2 MB per file, ≤ 15 MB per template. Use compressed formats (webp/jpeg, m4a/mp3).
-- **Format.** The workspace must pass the validator: clean markers, valid database shape, resolving references, no deprecated types. The authoritative format spec ships in every Otion workspace as `AGENTS.md`.
+- **Format.** The workspace must pass the validator: clean markers, valid database shape, resolving references, no deprecated types. The authoritative format spec ships in every Otion workspace under `skillsandtools/skills/`, linked from `agents.readme.md`.
 - **License.** `CC0-1.0`, `MIT`, or `CC-BY-4.0` only. Users own what they instantiate.
 - **Content.** Original work or content you have the right to publish. Nothing offensive, no advertising, placeholder text in the user's interest (realistic example data beats lorem ipsum).
 

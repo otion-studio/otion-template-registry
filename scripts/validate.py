@@ -13,7 +13,7 @@ Run against the repo root. Checks every template under templates/ for:
   SECURITY   No remote embeds (file/iconImage src and frontmatter cover must
              be workspace-relative, no URL schemes), no path traversal, no
              symlinks, only allowed file extensions, no app-generated files
-             (project.otion, AGENTS.md, ai-settings.json, backup/), and no
+             (project.otion, AGENTS.md, agents.readme.md, skillsandtools/, ai-settings.json, backup/), and no
              agent-injection phrases in page text.
   SIZE       <= 2 MB per file, <= 15 MB per template.
   PREVIEWS   Every preview declared in the manifest exists (and vice versa).
@@ -52,11 +52,11 @@ ALLOWED_EXTENSIONS = {
     ".pdf",
 }
 
-FORBIDDEN_NAMES = {"project.otion", "agents.md", "ai-settings.json"}
-FORBIDDEN_DIRS = {"backup"}
+FORBIDDEN_NAMES = {"project.otion", "agents.md", "agents.readme.md", "claude.md", "ai-settings.json"}
+FORBIDDEN_DIRS = {"backup", "skillsandtools"}
 
 # Phrases that read as instructions aimed at an AI agent. Otion ships a
-# built-in agent that reads workspace content, so template text that tries to
+# external-agent toolkit; external tools may read workspace content, so text that tries to
 # steer it is treated as hostile. Case-insensitive substring match.
 INJECTION_PHRASES = [
     "ignore previous instructions",
